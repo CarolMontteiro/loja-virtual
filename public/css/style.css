@@ -1,0 +1,9 @@
+/*      ABRIR MRNU-MOBILE COM JS      */
+.menu-mobile.open-menu {
+    width: 70%;
+}
+
+.menu-mobile.open-menu ~ .overlay-menu {
+    display: block;
+}
+
