@@ -1,9 +1,28 @@
 /*      ABRIR MRNU-MOBILE COM JS      */
 .menu-mobile.open-menu {
-    width: 70%;
+    width: 75%;
 }
 
 .menu-mobile.open-menu ~ .overlay-menu {
     display: block;
 }
 
+@media (max-width: 300px) {
+    .btn-mobile i {
+        font-size: 1.25rem;
+        padding-right: 9px;
+    }
+
+    .btn-close {
+        display: block;
+    }
+
+    .btn-right i {
+        font-size: 1.125rem;
+    }
+
+    .menu-mobile.open-menu {
+        width: 100%;
+    }
+
+}
