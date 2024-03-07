@@ -7,6 +7,14 @@
     display: block;
 }
 
+/*          CARD SLIDER SLICK       */
+.card h4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
 @media (max-width: 300px) {
     .btn-mobile i {
         font-size: 1.25rem;
@@ -24,5 +32,4 @@
     .menu-mobile.open-menu {
         width: 100%;
     }
-
 }

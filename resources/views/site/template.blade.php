@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="{{ asset('css/style.css')}}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/slick/slick.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/slick/slick-theme.css') }}"/>
     <script src="https://kit.fontawesome.com/8005c041ac.js" crossorigin="anonymous"></script>
     <title>Loja Virtual</title>
 </head>
-<body class="">
+<body>
 <header id="Header-nav">
     <div class="container">
         <div class="header-nav flex justify-between items-center py-5">
@@ -120,6 +122,13 @@
 <main class="bg-">
     @yield('content')
 </main>
-<script src="{{asset('js/menu-mobile.js')}}" defer></script>
+
+<script src="{{ asset('js/menu-mobile.js')}}" defer></script>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="{{ asset('js/slick/slick.min.js') }}"></script>
+
+<script src="{{ asset('js/slide-products.js') }}"></script>
 </body>
 </html>
