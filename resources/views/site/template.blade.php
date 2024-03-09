@@ -119,7 +119,7 @@
     </div>
 </header>
 
-<main class="bg-">
+<main class="bg-zinc-100">
     @yield('content')
 </main>
 
@@ -130,5 +130,7 @@
 <script type="text/javascript" src="{{ asset('js/slick/slick.min.js') }}"></script>
 
 <script src="{{ asset('js/slide-products.js') }}"></script>
+
+<script src="{{ asset('js/carousel-slick.js') }}"></script>
 </body>
 </html>
