@@ -1,11 +1,12 @@
 @extends('site.template')
 @section('content')
 
-<section id="carousel-slick">
+<section id="carousel-slick" class="bg-[#034AAD]">
     <div class="container">
         <div class="single-item">
-            <img src="{{ asset('image/carousel2.png') }}" alt="...">
-            <img src="{{ asset('image/carousel1.jpg') }}" alt="...">
+            <img src="{{ asset('image/2.jpg') }}" alt="...">
+            <img src="{{ asset('image/3.jpg') }}" alt="...">
+            <img src="{{ asset('image/1.jpg') }}" alt="...">
         </div>
     </div>
 </section>
