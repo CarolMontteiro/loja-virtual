@@ -13,26 +13,26 @@
 
 <section>
     <div class="container">
-        <div class="grid grid-cols-3 py-10 gap-10">
-            <div class="col-span-1 bg-white text-lg py-5 shadow rounded-2xl">
-                <div class="flex flex-col justify-center items-center">
-                    <img class="h-14 w-14" src="{{ asset('image/seguro.png') }}" alt="...">
+        <div class="py-10 text-center sm:grid sm:grid-cols-3 sm:gap-3 md:gap-5 lg:gap-10">
+            <div class="bg-white text-lg py-10 shadow rounded-2xl sm:col-span-1">
+                <div class="flex flex-col justify-center items-center sm:px-3">
+                    <img class="sm:h-10 sm:w-10 lg:h-14 lg:w-14" src="{{ asset('image/seguro.png') }}" alt="...">
                     <h2 class="pt-5">Compra fácil e segura</h2>
                     <p class=""></p>
                 </div>
             </div>
 
-            <div class="col-span-1 bg-white text-lg py-5 shadow rounded-2xl">
-                <div class="flex flex-col justify-center items-center">
-                    <img class="h-14 w-14" src="{{ asset('image/pagamento.png') }}" alt="...">
+            <div class="bg-white text-lg py-10 shadow rounded-2xl sm:col-span-1">
+                <div class="flex flex-col justify-center items-center sm:px-3">
+                    <img class="sm:h-10 sm:w-10 lg:h-14 lg:w-14" src="{{ asset('image/pagamento.png') }}" alt="...">
                     <h2 class="pt-5">Pague como quiser</h2>
                     <p class=""></p>
                 </div>
             </div>
 
-            <div class="col-span-1 bg-white text-lg py-5 shadow rounded-2xl">
-                <div class="flex flex-col justify-center items-center">
-                    <img class="h-14 w-14" src="{{ asset('image/entrega.png') }}" alt="...">
+            <div class="bg-white text-lg py-10 shadow rounded-2xl sm:col-span-1">
+                <div class="flex flex-col justify-center items-center sm:px-3 md:px-5">
+                    <img class="sm:h-11 sm:w-11 lg:h-14 lg:w-14" src="{{ asset('image/entrega.png') }}" alt="...">
                     <h2 class="pt-5">Frete grátis a partir de R$ 79</h2>
                     <p class=""></p>
                 </div>
@@ -43,7 +43,7 @@
 
 <section id="featured-products">
     <div class="container">
-        <h2 class="text-center text-2xl pb-10">Oferta do dia</h2>
+        <h2 class="text-2xl pb-10">Oferta do dia</h2>
 
         <div class="multiple-items flex">
             <div class="card items-cente text-center bg-white rounded-xl p-4 m-4 w-full cursor-pointer md:p-2 md:m-2 lg:p-4 lg:m-4">
