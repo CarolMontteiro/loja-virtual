@@ -8,10 +8,10 @@ $('.multiple-items').slick({
     slidesToScroll: 4,
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 1200,
             settings: {
                 slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToScroll: 3
             }
         },
         {
