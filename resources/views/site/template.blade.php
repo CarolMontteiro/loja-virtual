@@ -12,68 +12,72 @@
     <script src="https://kit.fontawesome.com/8005c041ac.js" crossorigin="anonymous"></script>
     <title>Loja Virtual</title>
 </head>
-<body class=" ">
-<header id="Header-nav" class="bg-[#C36BE5]">
+<body class="">
+<header id="Header-nav" class="bg-yellow-400">
     <div class="container">
         <div class="header-nav flex justify-between items-center py-5">
             <div>
                 <a href="#"
                    id="btn-menu"
                    class="btn-mobile md:hidden">
-                    <i class="fa-solid text-white fa-bars text-2xl px-5"></i>
+                    <i class="fa-solid text-blue-800 fa-bars text-2xl px-5"></i>
                 </a>
-                <a href="#" class="md:pl-5 font-semibold">LOGOMARCA</a>
+                <a href="#" class="md:pl-5 font-semibold text-blue-800">LOGOMARCA</a>
             </div>
 
-            <div class="search-box hidden bg-zinc-100 h-8 p-2.5 rounded-xl md:flex md:justify-center md:items-center">
+            <div class="search-box hidden bg-white h-8 p-2.5 rounded-xl md:flex md:justify-center md:items-center">
                 <input type="text"
                        name=""
                        class="search-text bg-neutral-800 border-0 bg-transparent outline-0 p-0 leading-[7px] md:w-60 lg:w-80"
                        placeholder="O que você procura?">
 
                 <a href="#" class="search-bnt flex justify-center items-center">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass text-blue-800"></i>
                 </a>
             </div>
 
             <div class="btn-right">
                 <div class="flex items-center">
                     <a href="#" class="w-11 hidden md:block">
-                        <i class="fa-solid fa-user text-xl text-white xl:text-2xl"></i>
+                        <i class="fa-solid fa-user text-xl text-blue-800 xl:text-2xl"></i>
                     </a>
 
                     <a href="#" class="relative w-11">
-                        <i class="fa-solid fa-heart text-xl text-white xl:text-2xl"></i>
-                        <span class="hidden absolute -top-4 left-4 text-xs bg-blue-800 text-white rounded px-1">0</span>
+                        <i class="fa-solid fa-heart text-xl text-blue-800 xl:text-2xl"></i>
+                        <span class="hidden absolute -top-4 left-4 text-xs bg-white text-blue-800 rounded px-1">0</span>
                     </a>
 
                     <a href="#" class="relative w-11 mr-3">
-                        <i class="fa-solid fa-cart-shopping text-xl text-white xl:text-2xl"></i>
-                        <span class="hidden absolute -top-4 left-6 text-xs bg-blue-800 text-white rounded px-1">0</span>
+                        <i class="fa-solid fa-cart-shopping text-xl text-blue-800 xl:text-2xl"></i>
+                        <span class="hidden absolute -top-4 left-6 text-xs bg-white text-blue-800 rounded px-1">0</span>
                     </a>
                 </div>
             </div>
         </div>
+    </div>
+</header>
 
-        <div class="h-10 flex items-center justify-center">
-            <div class="search-box bg-zinc-100 h-7 p-2.5 mb-5 rounded-xl flex justify-center items-center md:hidden">
+<section>
+    <div class="container">
+        <div class="h-14 flex items-center justify-center bg-white md:h-10">
+            <div class="search-box bg-blue-800 h-7 py-5 px-2.5 rounded-xl flex justify-center items-center md:hidden">
                 <input type="text"
                        name=""
-                       class="search-text w-full bg-neutral-800 border-0 bg-transparent outline-0 p-0 leading-[7px]"
+                       class="search-text text-white w-full border-0 bg-transparent outline-0 leading-[7px]"
                        placeholder="O que você procura?">
 
                 <a href="#" class="search-bnt flex justify-center items-center">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass text-yellow-400"></i>
                 </a>
             </div>
 
             <nav class="hidden md:block">
                 <ul class="flex gap-2 relative">
-                    <li><a href="#" class="text-white px-5 md:text-sm lg:text-base lg:px-7 xl:text-lg hover:text-yellow-300">Categorias</a></li>
-                    <li><a href="#" class="text-white px-5 md:text-sm lg:text-base lg:px-7 xl:text-lg hover:text-yellow-300">Mais vendido</a></li>
-                    <li><a href="#" class="text-white px-5 md:text-sm lg:text-base lg:px-7 xl:text-lg hover:text-yellow-300">Novidades na loja</a></li>
-                    <li><a href="#" class="text-white px-5 md:text-sm lg:text-base lg:px-7 xl:text-lg hover:text-yellow-300">Produtos em alta</a></li>
-                    <li><a href="#" class="text-white px-5 md:text-sm lg:text-base lg:px-7 xl:text-lg hover:text-yellow-300">Oferta do dia</a></li>
+                    <li><a href="#" class="text-blue-800 py-3 px-5 md:text-sm lg:text-base lg:px-7 xl:text-lg hover:bg-yellow-400">Categorias</a></li>
+                    <li><a href="#" class="text-blue-800 py-3 px-5 md:text-sm lg:text-base lg:px-7 xl:text-lg hover:bg-yellow-400">Mais vendido</a></li>
+                    <li><a href="#" class="text-blue-800 py-3 px-5 md:text-sm lg:text-base lg:px-7 xl:text-lg hover:bg-yellow-400">Novidades na loja</a></li>
+                    <li><a href="#" class="text-blue-800 py-3 px-5 md:text-sm lg:text-base lg:px-7 xl:text-lg hover:bg-yellow-400">Produtos em alta</a></li>
+                    <li><a href="#" class="text-blue-800 py-3 px-5 md:text-sm lg:text-base lg:px-7 xl:text-lg hover:bg-yellow-400">Oferta do dia</a></li>
                 </ul>
             </nav>
 
@@ -82,7 +86,7 @@
                     <i class="fa-solid fa-xmark text-white text-2xl pt-3 px-3"></i>
                 </div>
 
-                <div class="bg-[#C36BE5] py-3">
+                <div class="bg-blue-800 py-3">
                     <a href="#" class="enter-user w-11 text-white font-semibold">
                         <i class="fa-solid fa-user text-xl pl-3 pr-2"></i>
                         Entre ou Cadastre-se
@@ -94,23 +98,23 @@
                         <li>
                             <div class="text-sm text-[#034AAD] font-semibold uppercase p-3">Destaques</div>
                         </li>
-                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-white hover:bg-indigo-400">Mais vendido</a></li>
-                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-white hover:bg-indigo-400">Novidades na loja</a></li>
-                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-white hover:bg-indigo-400">Produtos em alta</a></li>
-                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-white hover:bg-indigo-400">Oferta do dia</a></li>
+                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-blue-800 hover:bg-yellow-400">Mais vendido</a></li>
+                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-blue-800 hover:bg-yellow-400">Novidades na loja</a></li>
+                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-blue-800 hover:bg-yellow-400">Produtos em alta</a></li>
+                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-blue-800 hover:bg-yellow-400">Oferta do dia</a></li>
                         <li>
                             <div class="text-sm text-[#034AAD] font-semibold uppercase p-3">Compras por categoria</div>
                         </li>
-                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-white hover:bg-indigo-400">Lorem ipsum</a></li>
-                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-white hover:bg-indigo-400">Lorem ipsum</a></li>
-                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-white hover:bg-indigo-400">Lorem ipsum</a></li>
-                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-white hover:bg-indigo-400">Lorem ipsum</a></li>
+                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-blue-800 hover:bg-yellow-400">Lorem ipsum</a></li>
+                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-blue-800 hover:bg-yellow-400">Lorem ipsum</a></li>
+                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-blue-800 hover:bg-yellow-400">Lorem ipsum</a></li>
+                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-blue-800 hover:bg-yellow-400">Lorem ipsum</a></li>
                         <li>
                             <div class="text-sm text-[#034AAD] font-semibold uppercase p-3">Ajuda e configurações</div>
                         </li>
-                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-white hover:bg-indigo-400">Sua conta</a></li>
-                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-white hover:bg-indigo-400">Ajuda</a></li>
-                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-white hover:bg-indigo-400">Faça seu login</a></li>
+                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-blue-800 hover:bg-yellow-400">Sua conta</a></li>
+                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-blue-800 hover:bg-yellow-400">Ajuda</a></li>
+                        <li><a href="#" class="w-full block py-1.5 px-3 hover:text-blue-800 hover:bg-yellow-400">Faça seu login</a></li>
                     </ul>
                 </nav>
             </div>
@@ -118,99 +122,99 @@
             <div id="overlay-menu" class="overlay-menu hidden bg-black/50 w-full h-full fixed top-0 right-0 z-[8888]"></div>
         </div>
     </div>
-</header>
+</section>
 
 <main class="bg-zinc-100">
     @yield('content')
 </main>
 
-<footer class="bg-white ">
+<footer class="">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
                 <a href="#" class="flex items-center">
 {{--                    <img src="" class="h-8 me-3" alt=""/>--}}
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap">LOGOMARCA</span>
+                    <span class="text-blue-800 self-center text-2xl font-semibold whitespace-nowrap">LOGOMARCA</span>
                 </a>
             </div>
-            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div class="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-3">
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Sobre LOGOMARCA</h2>
-                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <h2 class="text-blue-800 mb-6 text-base font-semibold uppercase">Sobre LOGOMARCA</h2>
+                    <ul class="text-gray-500 font-medium">
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Sobre nós</a>
+                            <a href="#" class="hover:underline hover:text-yellow-400">Sobre nós</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Trabalhe conosco</a>
+                            <a href="#" class="hover:underline hover:text-yellow-400">Trabalhe conosco</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Fornecedores</a>
+                            <a href="#" class="hover:underline hover:text-yellow-400">Fornecedores</a>
                         </li>
                          <li class="mb-4">
-                            <a href="#" class="hover:underline">Venda conosco</a>
+                            <a href="#" class="hover:underline hover:text-yellow-400">Venda conosco</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Atenção Clientes</h2>
-                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <h2 class="text-blue-800 mb-6 text-base font-semibold uppercase">Atenção Clientes</h2>
+                    <ul class="text-gray-500 font-medium">
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Soluções</a>
+                            <a href="#" class="hover:underline hover:text-yellow-400">Soluções</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Como comprar</a>
+                            <a href="#" class="hover:underline hover:text-yellow-400">Como comprar</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Benefícios</a>
+                            <a href="#" class="hover:underline hover:text-yellow-400">Benefícios</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Métodos de pagamentos</a>
+                            <a href="#" class="hover:underline hover:text-yellow-400">Métodos de pagamentos</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Devoluções e Garantias</a>
+                            <a href="#" class="hover:underline hover:text-yellow-400">Devoluções e Garantias</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Centro de ajuda</a>
+                            <a href="#" class="hover:underline hover:text-yellow-400">Centro de ajuda</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Reclamações e Sugestões</a>
+                            <a href="#" class="hover:underline hover:text-yellow-400">Reclamações e Sugestões</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Vendas corporativaa</a>
+                            <a href="#" class="hover:underline hover:text-yellow-400">Vendas corporativaa</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
-                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <h2 class="text-blue-800 mb-6 text-base font-semibold uppercase">Legal</h2>
+                    <ul class="text-gray-500 font-medium">
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Política de privacidade</a>
+                            <a href="#" class="hover:underline hover:text-yellow-400">Política de privacidade</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:underline">Termos &amp; Condições</a>
+                            <a href="#" class="hover:underline hover:text-yellow-400">Termos &amp; Condições</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#" class="hover:underline">LOGOMARCA</a>. Todos os direitos reservados.
+          <span class="text-sm text-gray-500 sm:text-center">© 2024 <a href="#" class="hover:underline">LOGOMARCA</a>. Todos os direitos reservados.
           </span>
             <div class="flex mt-4 sm:justify-center sm:mt-0">
-                <a href="#" class="text-gray-500 hover:text-gray-900">
+                <a href="#" class="text-gray-500 hover:text-blue-800">
                     <i class="fa-brands fa-facebook"></i>
                     <span class="sr-only">Facebook</span>
                 </a>
-                <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
+                <a href="#" class="text-gray-500 hover:text-blue-800 ms-5">
                     <i class="fa-brands fa-instagram"></i>
                     <span class="sr-only">instagram</span>
                 </a>
-                <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
+                <a href="#" class="text-gray-500 hover:text-blue-800 ms-5">
                     <i class="fa-brands fa-youtube"></i>
                     <span class="sr-only">YouTube</span>
                 </a>
-                <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
+                <a href="#" class="text-gray-500 hover:text-blue-800 ms-5">
                     <i class="fa-brands fa-tiktok"></i>
                     <span class="sr-only">TikTok</span>
                 </a>
