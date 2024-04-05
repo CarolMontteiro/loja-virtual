@@ -4,14 +4,14 @@ $('.multiple-items').slick({
     infinite: true,
     autoplay: false,
     speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     responsive: [
         {
             breakpoint: 1200,
             settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3
+                slidesToShow: 4,
+                slidesToScroll: 4
             }
         },
         {

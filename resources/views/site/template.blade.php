@@ -233,5 +233,7 @@
 <script src="{{ asset('js/slide-products.js') }}"></script>
 
 <script src="{{ asset('js/carousel-slick.js') }}"></script>
+
+<script src="{{ asset('js/category-product.js') }}"></script>
 </body>
 </html>

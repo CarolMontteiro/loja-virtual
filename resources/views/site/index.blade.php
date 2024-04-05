@@ -11,180 +11,118 @@
     </div>
 </section>
 
+<section>
+    <div class="container">
+        <div class="category-product">
+            <a href="#" class="text-center mt-5 group hover:transform hover:scale-110">
+                <div class="w-[75px] h-[75px] sm:w-20 sm:h-20 xl:w-[90px] xl:h-[90px] p-2 mx-auto bg-blue-800 border-4 border-yellow-600 rounded-full">
+                    <img class="w-full" src="{{ asset('image/ct1.png') }}" alt="">
+                </div>
+                <h3 class="mt-2 text-zinc-500 text-sm font-semibold group-hover:text-blue-800">Eletrônicos</h3>
+            </a>
+
+            <a href="#" class="text-center mt-5 group hover:transform hover:scale-110">
+                <div class="w-[75px] h-[75px] sm:w-20 sm:h-20 xl:w-[90px] xl:h-[90px] p-2 mx-auto bg-blue-800 border-4 border-yellow-600 rounded-full">
+                    <img class="w-full" src="{{ asset('image/ct2.png') }}" alt="">
+                </div>
+                <h3 class="mt-2 text-zinc-500 text-sm font-semibold group-hover:text-blue-800">Casa</h3>
+            </a>
+
+            <a href="#" class="text-center mt-5 group hover:transform hover:scale-110">
+                <div class="w-[75px] h-[75px] sm:w-20 sm:h-20 xl:w-[90px] xl:h-[90px] p-4 mx-auto bg-blue-800 border-4 border-yellow-600 rounded-full">
+                    <img class="w-full" src="{{ asset('image/ct3.png') }}" alt="">
+                </div>
+                <h3 class="mt-2 text-zinc-500 text-sm font-semibold group-hover:text-blue-800">Alimentos e Bebidas</h3>
+            </a>
+
+            <a href="#" class="text-center mt-5 group hover:transform hover:scale-110">
+                <div class="w-[75px] h-[75px] sm:w-20 sm:h-20 xl:w-[90px] xl:h-[90px] p-4 mx-auto bg-blue-800 border-4 border-yellow-600 rounded-full">
+                    <img class="w-full" src="{{ asset('image/ct4.png') }}" alt="">
+                </div>
+                <h3 class="mt-2 text-zinc-500 text-sm font-semibold group-hover:text-blue-800">Moda</h3>
+            </a>
+
+            <a href="#" class="text-center mt-5 group hover:transform hover:scale-110">
+                <div class="w-[75px] h-[75px] sm:w-20 sm:h-20 xl:w-[90px] xl:h-[90px] p-4 mx-auto bg-blue-800 border-4 border-yellow-600 rounded-full">
+                    <img class="w-full" src="{{ asset('image/ct5.png') }}" alt="">
+                </div>
+                <h3 class="mt-2 text-zinc-500 text-sm font-semibold group-hover:text-blue-800">Ferramentas e Construções</h3>
+            </a>
+
+            <a href="#" class="text-center mt-5 group hover:transform hover:scale-110">
+                <div class="w-[75px] h-[75px] sm:w-20 sm:h-20 xl:w-[90px] xl:h-[90px] p-4 mx-auto bg-blue-800 border-4 border-yellow-600 rounded-full">
+                    <img class="w-full" src="{{ asset('image/ct6.png') }}" alt="">
+                </div>
+                <h3 class="mt-2 text-zinc-500 text-sm font-semibold group-hover:text-blue-800">Cuidados Pessoais</h3>
+            </a>
+
+            <a href="#" class="text-center mt-5 group hover:transform hover:scale-110">
+                <div class="w-[75px] h-[75px] sm:w-20 sm:h-20 xl:w-[90px] xl:h-[90px] p-4 mx-auto bg-blue-800 border-4 border-yellow-600 rounded-full">
+                    <img class="w-full" src="{{ asset('image/ct7.png') }}" alt="">
+                </div>
+                <h3 class="mt-2 text-zinc-500 text-sm font-semibold group-hover:text-blue-800">Games e Console</h3>
+            </a>
+
+            <a href="#" class="text-center mt-5 group hover:transform hover:scale-110">
+                <div class="w-[75px] h-[75px] sm:w-20 sm:h-20 xl:w-[90px] xl:h-[90px] p-4 mx-auto bg-blue-800 border-4 border-yellow-600 rounded-full">
+                    <img class="w-full" src="{{ asset('image/ct8.png') }}" alt="">
+                </div>
+                <h3 class="mt-2 text-zinc-500 text-sm font-semibold group-hover:text-blue-800">Papelaria e Escritório</h3>
+            </a>
+
+            <a href="#" class="text-center mt-5 group hover:transform hover:scale-110">
+                <div class="w-[75px] h-[75px] sm:w-20 sm:h-20 xl:w-[90px] xl:h-[90px] p-4 mx-auto bg-blue-800 border-4 border-yellow-600 rounded-full">
+                    <img class="w-full" src="{{ asset('image/ct9.png') }}" alt="">
+                </div>
+                <h3 class="mt-2 text-zinc-500 text-sm font-semibold group-hover:text-blue-800">Casa Inteligente</h3>
+            </a>
+        </div>
+    </div>
+</section>
+
 <section id="featured-products">
     <div class="container">
         <h2 class="text-blue-800 text-xl text-center font-semibold uppercase mt-10 pb-10">Oferta do dia</h2>
 
         <div class="multiple-items flex">
-            <div class="card relative items-cente text-center bg-white rounded-xl p-4 m-4 w-full cursor-pointer md:p-2 md:m-2 lg:p-4 lg:m-4 hover:shadow-lg">
-                <div class="like absolute bg-purple-500 w-20 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
-                </div>
-
-                <img class="product w-full" src="{{ asset('image/slide1.jpg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">iPad Mini 3 Apple 64GB Cinza Chumbo Tela 7,9” - Retina Wi-Fi Processador M7 Câmera 5MP + Frontal - iPad Mini</h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-
-                <div class="price mt-2 mb-3">
-                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 3.999,99</h5>
-                    <h5 class="font-semibold text-zinc-500 text-lg mb-1.5">R$ 3.799,99</h5>
-                </div>
-
-{{--                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"--}}
-{{--                   href="#">Adicionar ao carrinho--}}
-{{--                </a>--}}
-            </div>
-
-            <div class="card relative items-cente text-center bg-white rounded-xl p-4 m-4 w-full cursor-pointer md:p-2 md:m-2 lg:p-4 lg:m-4 hover:shadow-lg">
-                <div class="like absolute bg-purple-500 w-20 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
-                </div>
-
-                <img class="product w-full" src="{{ asset('image/slide2.jpeg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">Fogão Consul 5 bocas Preto com mesa de vidro, chama dupla especial e grades individuais de ferro fundido </h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-
-                <div class="price mt-2 mb-3">
-                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 1.999,00 </h5>
-                    <h5 class="font-semibold text-zinc-500 text-lg mb-1.5">R$ R$ 1.899,05</h5>
-                </div>
-
-{{--                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"--}}
-{{--                   href="#">Adicionar ao carrinho--}}
-{{--                </a>--}}
-            </div>
-
-            <div class="card relative items-cente text-center bg-white rounded-xl p-4 m-4 w-full cursor-pointer md:p-2 md:m-2 lg:p-4 lg:m-4 hover:shadow-lg">
-                <div class="like absolute bg-purple-500 w-20 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
-                </div>
-
-                <img class="product w-full" src="{{ asset('image/slide3.jpeg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">Tênis Feminino Adidas Duramo 10 GW4113 Running Academia - branco</h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-
-                <div class="price mt-2 mb-3">
-                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 399,90</h5>
-                    <h5 class="font-semibold text-zinc-500 text-lg mb-1.5">R$ 375,90</h5>
-                </div>
-
-{{--                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"--}}
-{{--                   href="#">Adicionar ao carrinho--}}
-{{--                </a>--}}
-            </div>
-
-            <div class="card relative items-cente text-center bg-white rounded-xl p-4 m-4 w-full cursor-pointer md:p-2 md:m-2 lg:p-4 lg:m-4 hover:shadow-lg">
-                <div class="like absolute bg-purple-500 w-20 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
-                </div>
-
-                <img class="product w-full" src="{{ asset('image/slide4.jpg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">NOTEBOOK SAMSUNG NP550 I3/4GB/256GB 15"</h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-
-                <div class="price mt-2 mb-3">
-                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 2.299,90</h5>
-                    <h5 class="font-semibold text-zinc-500 text-lg mb-1.5"> R$ 2.092,90</h5>
-                </div>
-
-{{--                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"--}}
-{{--                   href="#">Adicionar ao carrinho--}}
-{{--                </a>--}}
-            </div>
-
-            <div class="card relative items-cente text-center bg-white rounded-xl p-4 m-4 w-full cursor-pointer md:p-2 md:m-2 lg:p-4 lg:m-4 hover:shadow-lg">
-                <div class="like absolute bg-purple-500 h-auto cursor-pointer">
-                    <div class="bg-blue-400">
-                        <i class="fa-solid fa-heart text-zinc-300 text-xl"></i>
+            @for ($i = 0; $i < 8; $i++)
+                <div class="card bg-white p-2 mx-6 sm:m-1 group">
+                    <div class="like">
+                        <div class="like w-full flex justify-end mb-1.5 cursor-pointer">
+                            <i class="fa-solid fa-heart text-zinc-300 text-2xl hover:text-red-600"></i>
+                        </div>
                     </div>
-                    <div class="bg-blue-400">
-                        <i class="fa-solid fa-cart-shopping text-zinc-300 text-xl"></i>
+                    <div class="image group-hover:transform group-hover:scale-95">
+                        <img class="w-full bg-cover" src="{{ asset('image/slide1.jpg') }}" alt="">
                     </div>
-                    <div class="bg-blue-400">
-                        <i class="fa-solid fa-share-nodes text-zinc-300 text-xl"></i>
+                    <div class="description text-center">
+                        <h4 class="text-zinc-600 text-md font-light my-2" title="">iPad Mini 3 Apple 64GB Cinza Chumbo Tela 7,9” - Retina Wi-Fi Processador M7 Câmera 5MP + Frontal - iPad Mini</h4>
+
+                        <div class="flex justify-center">
+                            <div class="rating text-yellow-500 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <span class="text-sm text-zinc-500">(2000)</span>
+                        </div>
+
+
+                        <div class="price mt-1 mb-2">
+                            <h5 class="line-through font-light text-zinc-500 text-sm">R$ 3.999,99</h5>
+                            <h5 class="font-semibold text-zinc-500 text-lg mb-1.5">R$ 3.799,99</h5>
+                        </div>
+                    </div>
+                    <div class="cart text-center">
+                        <button class="font-semibold rounded-lg py-1.5 px-6 border border-blue-800 text-blue-800 transition hover:transform hover:scale-110 group-hover:bg-blue-800 group-hover:text-white">
+                            Adicionar
+                            <i class="fa-solid fa-cart-shopping text-lg ml-2 group-hover:text-yellow-400"></i>
+                        </button>
                     </div>
                 </div>
-
-                <img class="product w-full" src="{{ asset('image/slide5.jpg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">CREATINA HARDCORE RELOAD (300G) - INTEGRALMEDICA</h4>
-
-                <div class="rating text-blue-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-
-                <div class="price mt-2 mb-3">
-                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 105,00</h5>
-                    <h5 class="font-semibold text-zinc-500 text-lg mb-1.5"> R$ 99,99</h5>
-                </div>
-
-{{--                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"--}}
-{{--                   href="#">Adicionar ao carrinho--}}
-{{--                </a>--}}
-            </div>
-
-            <div class="card relative items-cente text-center bg-white rounded-xl p-4 m-4 w-full cursor-pointer md:p-2 md:m-2 lg:p-4 lg:m-4 hover:shadow-lg">
-                <div class="like absolute bg-purple-500 w-20 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
-                </div>
-
-                <img class="product w-full" src="{{ asset('image/slide6.jpg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">Sofá 2 Lugares Suede Decore - cor bege</h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-
-                <div class="price mt-2 mb-3">
-                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 1.300,00</h5>
-                    <h5 class="font-semibold text-zinc-500 text-lg mb-1.5"> R$ 1.159,00</h5>
-                </div>
-
-{{--                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"--}}
-{{--                   href="#">Adicionar ao carrinho--}}
-{{--                </a>--}}
-            </div>
+            @endfor
         </div>
     </div>
 </section>
@@ -228,167 +166,44 @@
         <h2 class="text-blue-800 text-xl text-center font-semibold uppercase mt-10 pb-10">Mais vendidos</h2>
 
         <div class="multiple-items flex">
-            <div class="card text-center bg-white rounded-xl p-4 m-4 cursor-pointer md:p-2 md:m-2 lg:p-4">
-                <div class="like w-full h-5 flex justify-end mb-1.5 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
+            @for ($i = 0; $i < 8; $i++)
+                <div class="card bg-white p-2 mx-6 sm:m-1">
+                    <div class="like">
+                        <div class="like w-full flex justify-end mb-1.5 cursor-pointer">
+                            <i class="fa-solid fa-heart text-zinc-300 text-2xl hover:text-red-600"></i>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img class="w-full bg-cover" src="{{ asset('image/slide1.jpg') }}" alt="">
+                    </div>
+                    <div class="description text-center">
+                        <h4 class="text-zinc-600 text-md font-light my-2" title="">iPad Mini 3 Apple 64GB Cinza Chumbo Tela 7,9” - Retina Wi-Fi Processador M7 Câmera 5MP + Frontal - iPad Mini</h4>
+
+                        <div class="flex justify-center">
+                            <div class="rating text-yellow-500 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <span class="text-sm text-zinc-500">(2000)</span>
+                        </div>
+
+
+                        <div class="price mt-1 mb-2">
+                            <h5 class="line-through font-light text-zinc-500 text-sm">R$ 3.999,99</h5>
+                            <h5 class="font-semibold text-zinc-500 text-lg mb-1.5">R$ 3.799,99</h5>
+                        </div>
+                    </div>
+                    <div class="cart text-center">
+                        <button class="font-semibold rounded-lg py-1.5 px-6 border border-blue-800 text-blue-800 hover:bg-blue-800 group transition hover:text-white">
+                            Adicionar
+                            <i class="fa-solid fa-cart-shopping text-lg ml-2 group-hover:text-yellow-400"></i>
+                        </button>
+                    </div>
                 </div>
-
-                <img class="product w-full" src="{{ asset('image/slide7.jpeg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">Ventilador Mondial 40Cm VTX-40-8P Com Controle 220v/60Hz.</h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-
-                <div class="price flex justify-center gap-2.5 my-2">
-{{--                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 3.999,99</h5>--}}
-                    <h5 class="font-semibold text-zinc-500 text-xl mb-1.5">R$ 196,90</h5>
-                </div>
-
-                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"
-                   href="#">Adicionar ao carrinho
-                </a>
-            </div>
-
-            <div class="card text-center bg-white rounded-xl p-4 m-4 cursor-pointer md:p-2 md:m-2 lg:p-4">
-                <div class="like w-full h-5 flex justify-end mb-1.5 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
-                </div>
-
-                <img class="product w-full" src="{{ asset('image/slide8.jpg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">Cropped Em Moleton Com Capuz</h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-
-                <div class="price flex justify-center gap-2.5 my-2">
-{{--                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 1.999,00 </h5>--}}
-                    <h5 class="font-semibold text-zinc-500 text-xl mb-1.5">R$ R$ 79,99</h5>
-                </div>
-
-                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"
-                   href="#">Adicionar ao carrinho
-                </a>
-            </div>
-
-            <div class="card text-center bg-white rounded-xl p-4 m-4 cursor-pointer md:p-2 md:m-2 lg:p-4">
-                <div class="like w-full h-5 flex justify-end mb-1.5 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
-                </div>
-
-                <img class="product w-full" src="{{ asset('image/slide9.jpg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">Fone Bluetooth 5.1 EDIFIER W600BT</h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-
-                <div class="price flex justify-center gap-2.5 my-2">
-{{--                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 399,90</h5>--}}
-                    <h5 class="font-semibold text-zinc-500 text-xl mb-1.5">R$ 199,90</h5>
-                </div>
-
-                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"
-                   href="#">Adicionar ao carrinho
-                </a>
-            </div>
-
-            <div class="card text-center bg-white rounded-xl p-4 m-4 cursor-pointer md:p-2 md:m-2 lg:p-4">
-                <div class="like w-full h-5 flex justify-end mb-1.5 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
-                </div>
-
-                <img class="product w-full" src="{{ asset('image/slide10.jpeg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">Ar Condicionado Split Hi Wall Britânia 9000 BTU/h Frio BAC9000TFM12 220 Volts - Britania "</h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-
-                <div class="price flex justify-center gap-2.5 my-2">
-{{--                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 2.299,90</h5>--}}
-                    <h5 class="font-semibold text-zinc-500 text-xl mb-1.5"> R$ 2.092,90</h5>
-                </div>
-
-                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"
-                   href="#">Adicionar ao carrinho
-                </a>
-            </div>
-
-            <div class="card text-center bg-white rounded-xl p-4 m-4 cursor-pointer md:p-2 md:m-2 lg:p-4">
-                <div class="like w-full h-5 flex justify-end mb-1.5 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
-                </div>
-
-                <img class="product w-full" src="{{ asset('image/slide5.jpg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">CREATINA HARDCORE RELOAD (300G) - INTEGRALMEDICA</h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-
-                <div class="price flex justify-center gap-2.5 my-2">
-                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 105,00</h5>
-                    <h5 class="font-semibold text-zinc-500 text-xl mb-1.5"> R$ 99,99</h5>
-                </div>
-
-                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"
-                   href="#">Adicionar ao carrinho
-                </a>
-            </div>
-
-            <div class="card text-center bg-white rounded-xl p-4 m-4 cursor-pointer md:p-2 md:m-2 lg:p-4">
-                <div class="like w-full h-5 flex justify-end mb-1.5 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
-                </div>
-
-                <img class="product w-full" src="{{ asset('image/slide6.jpg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">Sofá 2 Lugares Suede Decore - cor bege</h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-
-                <div class="price flex justify-center gap-2.5 my-2">
-                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 1.300,00</h5>
-                    <h5 class="font-semibold text-zinc-500 text-xl mb-1.5"> R$ 1.159,00</h5>
-                </div>
-
-                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"
-                   href="#">Adicionar ao carrinho
-                </a>
-            </div>
+            @endfor
         </div>
     </div>
 </section>
@@ -398,167 +213,44 @@
         <h2 class="text-blue-800 text-xl text-center font-semibold uppercase mt-10 pb-10">Novidades</h2>
 
         <div class="multiple-items flex">
-            <div class="card items-cente text-center bg-white rounded-xl p-4 m-4 w-full cursor-pointer md:p-2 md:m-2 lg:p-4 lg:m-4">
-                <div class="like w-full h-5 flex justify-end mb-1.5 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
+            @for ($i = 0; $i < 8; $i++)
+                <div class="card bg-white p-2 mx-6 sm:m-1">
+                    <div class="like">
+                        <div class="like w-full flex justify-end mb-1.5 cursor-pointer">
+                            <i class="fa-solid fa-heart text-zinc-300 text-2xl hover:text-red-600"></i>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img class="w-full bg-cover" src="{{ asset('image/slide1.jpg') }}" alt="">
+                    </div>
+                    <div class="description text-center">
+                        <h4 class="text-zinc-600 text-md font-light my-2" title="">iPad Mini 3 Apple 64GB Cinza Chumbo Tela 7,9” - Retina Wi-Fi Processador M7 Câmera 5MP + Frontal - iPad Mini</h4>
+
+                        <div class="flex justify-center">
+                            <div class="rating text-yellow-500 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <span class="text-sm text-zinc-500">(2000)</span>
+                        </div>
+
+
+                        <div class="price mt-1 mb-2">
+                            <h5 class="line-through font-light text-zinc-500 text-sm">R$ 3.999,99</h5>
+                            <h5 class="font-semibold text-zinc-500 text-lg mb-1.5">R$ 3.799,99</h5>
+                        </div>
+                    </div>
+                    <div class="cart text-center">
+                        <button class="font-semibold rounded-lg py-1.5 px-6 border border-blue-800 text-blue-800 hover:bg-blue-800 group transition hover:text-white">
+                            Adicionar
+                            <i class="fa-solid fa-cart-shopping text-lg ml-2 group-hover:text-yellow-400"></i>
+                        </button>
+                    </div>
                 </div>
-
-                <img class="product w-full" src="{{ asset('image/slide11.jpeg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">Caminha Cachorro pets 3 em 1 Conforto Media</h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-
-                <div class="price flex justify-center gap-2.5 my-2">
-{{--                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 3.999,99</h5>--}}
-                    <h5 class="font-semibold text-zinc-500 text-xl mb-1.5">R$ 199,90</h5>
-                </div>
-
-                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"
-                   href="#">Adicionar ao carrinho
-                </a>
-            </div>
-
-            <div class="card items-cente text-center bg-white rounded-xl p-4 m-4 w-full cursor-pointer md:p-2 md:m-2 lg:p-4 lg:m-4">
-                <div class="like w-full h-5 flex justify-end mb-1.5 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
-                </div>
-
-                <img class="product w-full" src="{{ asset('image/slide12.jpg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">Coluna Inteligente Amazon Echo 5ª Geração Alexa Branco</h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-
-                <div class="price flex justify-center gap-2.5 my-2">
-{{--                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 1.999,00 </h5>--}}
-                    <h5 class="font-semibold text-zinc-500 text-xl mb-1.5">R$ 429,99</h5>
-                </div>
-
-                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"
-                   href="#">Adicionar ao carrinho
-                </a>
-            </div>
-
-            <div class="card items-cente text-center bg-white rounded-xl p-4 m-4 w-full cursor-pointer md:p-2 md:m-2 lg:p-4 lg:m-4">
-                <div class="like w-full h-5 flex justify-end mb-1.5 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
-                </div>
-
-                <img class="product w-full" src="{{ asset('image/slide13.jpg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">Armário de Cozinha Ametista 5 Portas 1 Gaveta 3 Nichos </h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-
-                <div class="price flex justify-center gap-2.5 my-2">
-{{--                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 399,90</h5>--}}
-                    <h5 class="font-semibold text-zinc-500 text-xl mb-1.5">R$ 499,90</h5>
-                </div>
-
-                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"
-                   href="#">Adicionar ao carrinho
-                </a>
-            </div>
-
-            <div class="card items-cente text-center bg-white rounded-xl p-4 m-4 w-full cursor-pointer md:p-2 md:m-2 lg:p-4 lg:m-4">
-                <div class="like w-full h-5 flex justify-end mb-1.5 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
-                </div>
-
-                <img class="product w-full" src="{{ asset('image/slide4.jpg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">NOTEBOOK SAMSUNG NP550 I3/4GB/256GB 15"</h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-
-                <div class="price flex justify-center gap-2.5 my-2">
-                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 2.299,90</h5>
-                    <h5 class="font-semibold text-zinc-500 text-xl mb-1.5"> R$ 2.092,90</h5>
-                </div>
-
-                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"
-                   href="#">Adicionar ao carrinho
-                </a>
-            </div>
-
-            <div class="card items-cente text-center bg-white rounded-xl p-4 m-4 w-full cursor-pointer md:p-2 md:m-2 lg:p-4 lg:m-4">
-                <div class="like w-full h-5 flex justify-end mb-1.5 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
-                </div>
-
-                <img class="product w-full" src="{{ asset('image/slide5.jpg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">CREATINA HARDCORE RELOAD (300G) - INTEGRALMEDICA</h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-
-                <div class="price flex justify-center gap-2.5 my-2">
-                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 105,00</h5>
-                    <h5 class="font-semibold text-zinc-500 text-xl mb-1.5"> R$ 99,99</h5>
-                </div>
-
-                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"
-                   href="#">Adicionar ao carrinho
-                </a>
-            </div>
-
-            <div class="card items-cente text-center bg-white rounded-xl p-4 m-4 w-full cursor-pointer md:p-2 md:m-2 lg:p-4 lg:m-4">
-                <div class="like w-full h-5 flex justify-end mb-1.5 cursor-pointer">
-                    <i class="fa-solid fa-heart text-zinc-300 text-xl hover:text-red-600"></i>
-                </div>
-
-                <img class="product w-full" src="{{ asset('image/slide6.jpg') }}" alt="Foto do produto">
-
-                <h4 class="text-zinc-600 text-md font-light my-2" title="">Sofá 2 Lugares Suede Decore - cor bege</h4>
-
-                <div class="rating text-yellow-500">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-
-                <div class="price flex justify-center gap-2.5 my-2">
-                    <h5 class="line-through font-light text-zinc-500 text-sm">R$ 1.300,00</h5>
-                    <h5 class="font-semibold text-zinc-500 text-xl mb-1.5"> R$ 1.159,00</h5>
-                </div>
-
-                <a class="text-blue-700 text-center border-2 border-blue-700 rounded-2xl p-2 duration-200 hover:text-white hover:bg-blue-700"
-                   href="#">Adicionar ao carrinho
-                </a>
-            </div>
+            @endfor
         </div>
     </div>
 </section>
@@ -601,7 +293,7 @@
             </div>
 
             <div class="border-0 pb-6 lg:pb-0">
-                <input type="email" placeholder="Digite seu e-mail" class="bg-neutral-100 border border-neutral-200 rounded-lg px-6 py-2 mb-1 text-base hover:border-yellow-600 cursor-pointer outline-yellow-400 transition sm:mb-0">
+                <input type="email" placeholder="Digite seu e-mail" class="bg-neutral-100 border border-neutral-200 rounded-lg px-6 py-2 mb-1 text-base hover:border-yellow-600 cursor-pointer outline-yellow-400 transition sm:mb-0 lg:">
                 <button class="cursor-pointer font-semibold text-white border border-yellow-600 rounded-lg px-6 py-2 hover:bg-yellow-400 hover:text-blue-800">
                     Receber
                 </button>
