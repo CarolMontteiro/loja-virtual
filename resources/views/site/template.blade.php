@@ -44,12 +44,12 @@
 
                     <a href="#" class="relative w-11">
                         <i class="fa-solid fa-heart text-xl text-blue-800 xl:text-2xl"></i>
-                        <span class="hidden absolute -top-4 left-4 text-xs bg-white text-blue-800 rounded px-1">0</span>
+                        <span id="favorites-icon" class="absolute top-[-13px] bg-white px-1 text-sm text-blue-800 rounded-full">0</span>
                     </a>
 
                     <a href="#" class="relative w-11 mr-3">
                         <i class="fa-solid fa-cart-shopping text-xl text-blue-800 xl:text-2xl"></i>
-                        <span class="hidden absolute -top-4 left-6 text-xs bg-white text-blue-800 rounded px-1">0</span>
+                        <span id="cart-icon" class="absolute top-[-13px] right-[-1px] bg-white px-1 text-sm text-blue-800 rounded-full">0</span>
                     </a>
                 </div>
             </div>
@@ -235,5 +235,7 @@
 <script src="{{ asset('js/carousel-slick.js') }}"></script>
 
 <script src="{{ asset('js/category-product.js') }}"></script>
+
+<script src="{{ asset('js/cart-and-favorites.js') }}"></script>
 </body>
 </html>

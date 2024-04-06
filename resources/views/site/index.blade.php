@@ -86,11 +86,9 @@
 
         <div class="multiple-items flex">
             @for ($i = 0; $i < 8; $i++)
-                <div class="card bg-white p-2 mx-6 sm:m-1 group">
-                    <div class="like">
-                        <div class="like w-full flex justify-end mb-1.5 cursor-pointer">
-                            <i class="fa-solid fa-heart text-zinc-300 text-2xl hover:text-red-600"></i>
-                        </div>
+                <div class="card bg-white p-2 mx-6 cursor-pointer hover:shadow sm:mx-2 group">
+                    <div class="add-to-favorites-btn like w-full flex justify-end mb-1.5 cursor-pointer">
+                        <i class="fa-solid fa-heart text-zinc-300 text-2xl hover:text-red-600"></i>
                     </div>
                     <div class="image group-hover:transform group-hover:scale-95">
                         <img class="w-full bg-cover" src="{{ asset('image/slide1.jpg') }}" alt="">
@@ -116,7 +114,7 @@
                         </div>
                     </div>
                     <div class="cart text-center">
-                        <button class="font-semibold rounded-lg py-1.5 px-6 border border-blue-800 text-blue-800 transition hover:transform hover:scale-110 group-hover:bg-blue-800 group-hover:text-white">
+                        <button class="add-to-cart-btn font-semibold rounded-lg py-1.5 px-6 border border-blue-800 text-blue-800 transition hover:transform hover:scale-110 group-hover:bg-blue-800 group-hover:text-white">
                             Adicionar
                             <i class="fa-solid fa-cart-shopping text-lg ml-2 group-hover:text-yellow-400"></i>
                         </button>
@@ -167,13 +165,11 @@
 
         <div class="multiple-items flex">
             @for ($i = 0; $i < 8; $i++)
-                <div class="card bg-white p-2 mx-6 sm:m-1">
-                    <div class="like">
-                        <div class="like w-full flex justify-end mb-1.5 cursor-pointer">
-                            <i class="fa-solid fa-heart text-zinc-300 text-2xl hover:text-red-600"></i>
-                        </div>
+                <div class="card bg-white p-2 mx-6 cursor-pointer hover:shadow sm:mx-2 group">
+                    <div class="add-to-favorites-btn like w-full flex justify-end mb-1.5 cursor-pointer">
+                        <i class="fa-solid fa-heart text-zinc-300 text-2xl hover:text-red-600"></i>
                     </div>
-                    <div class="image">
+                    <div class="image group-hover:transform group-hover:scale-95">
                         <img class="w-full bg-cover" src="{{ asset('image/slide1.jpg') }}" alt="">
                     </div>
                     <div class="description text-center">
@@ -197,7 +193,7 @@
                         </div>
                     </div>
                     <div class="cart text-center">
-                        <button class="font-semibold rounded-lg py-1.5 px-6 border border-blue-800 text-blue-800 hover:bg-blue-800 group transition hover:text-white">
+                        <button class="add-to-cart-btn font-semibold rounded-lg py-1.5 px-6 border border-blue-800 text-blue-800 transition hover:transform hover:scale-110 group-hover:bg-blue-800 group-hover:text-white">
                             Adicionar
                             <i class="fa-solid fa-cart-shopping text-lg ml-2 group-hover:text-yellow-400"></i>
                         </button>
@@ -214,13 +210,11 @@
 
         <div class="multiple-items flex">
             @for ($i = 0; $i < 8; $i++)
-                <div class="card bg-white p-2 mx-6 sm:m-1">
-                    <div class="like">
-                        <div class="like w-full flex justify-end mb-1.5 cursor-pointer">
-                            <i class="fa-solid fa-heart text-zinc-300 text-2xl hover:text-red-600"></i>
-                        </div>
+                <div class="card bg-white p-2 mx-6 cursor-pointer hover:shadow sm:mx-2 group">
+                    <div class="add-to-favorites-btn like w-full flex justify-end mb-1.5 cursor-pointer">
+                        <i class="fa-solid fa-heart text-zinc-300 text-2xl hover:text-red-600"></i>
                     </div>
-                    <div class="image">
+                    <div class="image group-hover:transform group-hover:scale-95">
                         <img class="w-full bg-cover" src="{{ asset('image/slide1.jpg') }}" alt="">
                     </div>
                     <div class="description text-center">
@@ -244,7 +238,7 @@
                         </div>
                     </div>
                     <div class="cart text-center">
-                        <button class="font-semibold rounded-lg py-1.5 px-6 border border-blue-800 text-blue-800 hover:bg-blue-800 group transition hover:text-white">
+                        <button class="add-to-cart-btn font-semibold rounded-lg py-1.5 px-6 border border-blue-800 text-blue-800 transition hover:transform hover:scale-110 group-hover:bg-blue-800 group-hover:text-white">
                             Adicionar
                             <i class="fa-solid fa-cart-shopping text-lg ml-2 group-hover:text-yellow-400"></i>
                         </button>
@@ -307,6 +301,5 @@
         </div>
     </div>
 </section>
-
 @endsection
 

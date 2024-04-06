@@ -15,6 +15,13 @@ $('.multiple-items').slick({
             }
         },
         {
+            breakpoint: 1023,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+        },
+        {
             breakpoint: 768,
             settings: {
                 slidesToShow: 2,
