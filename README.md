@@ -1,6 +1,6 @@
 # E-Commerce
 
-![Screenshot from 2024-04-06 19-59-05](https://github.com/CarolMontteiro/loja-virtual/assets/100248140/b97e52da-ed0f-48d6-9015-a09b4d09edd5)
+![Screenshot from 2024-04-06 20-04-46](https://github.com/CarolMontteiro/loja-virtual/assets/100248140/a5b5a616-46c1-429b-b12d-42fcba13a289)
 
 
 > Developing ⚠️
