@@ -12,10 +12,10 @@
     <script src="https://kit.fontawesome.com/8005c041ac.js" crossorigin="anonymous"></script>
     <title>Loja Virtual</title>
 </head>
-<body class="">
+<body>
 <header id="Header-nav" class="bg-yellow-400">
     <div class="container">
-        <div class="header-nav flex justify-between items-center py-5">
+        <div class="header-nav flex justify-between items-center py-6">
             <div>
                 <a href="#"
                    id="btn-menu"
@@ -37,19 +37,19 @@
             </div>
 
             <div class="btn-right">
-                <div class="flex items-center">
+                <div class="flex">
                     <a href="#" class="w-11 hidden md:block">
-                        <i class="fa-solid fa-user text-xl text-blue-800 xl:text-2xl"></i>
+                        <i class="fa-solid fa-user text-xl text-blue-800 xl:text-xl"></i>
                     </a>
 
                     <a href="#" class="relative w-11">
-                        <i class="fa-solid fa-heart text-xl text-blue-800 xl:text-2xl"></i>
-                        <span id="favorites-icon" class="absolute top-[-13px] bg-white px-1 text-sm text-blue-800 rounded-full">0</span>
+                        <i class="fa-solid fa-heart text-xl text-blue-800 xl:text-xl"></i>
+                        <span id="favorites-icon" class="absolute top-[-13px] bg-white pt-[2px] px-[4px] text-xs text-blue-800 rounded-full">0</span>
                     </a>
 
-                    <a href="#" class="relative w-11 mr-3">
-                        <i class="fa-solid fa-cart-shopping text-xl text-blue-800 xl:text-2xl"></i>
-                        <span id="cart-icon" class="absolute top-[-13px] right-[-1px] bg-white px-1 text-sm text-blue-800 rounded-full">0</span>
+                    <a href="#" class="relative w-11">
+                        <i class="fa-solid fa-cart-shopping text-xl text-blue-800 xl:text-xl"></i>
+                        <span id="cart-icon" class="absolute top-[-13px] right-[5px] bg-white pt-[2px] px-[4px] text-xs text-blue-800 rounded-full">0</span>
                     </a>
                 </div>
             </div>

@@ -13,7 +13,7 @@
 
 <section>
     <div class="container">
-        <div class="category-product">
+        <div class="category-product py-5">
             <a href="#" class="text-center mt-5 group hover:transform hover:scale-110">
                 <div class="w-[75px] h-[75px] sm:w-20 sm:h-20 xl:w-[90px] xl:h-[90px] p-2 mx-auto bg-blue-800 border-4 border-yellow-600 rounded-full">
                     <img class="w-full" src="{{ asset('image/ct1.png') }}" alt="">
@@ -133,7 +133,7 @@
                      style="background-image: url('{{ asset('image/casa.jpg') }}')" title="">
                 </div>
                 <div class="bg-white rounded-b p-4 flex flex-col justify-center leading-normal lg:rounded-b-none lg:w-[394px] lg:rounded-r">
-                    <div class="">
+                    <div>
                         <div class="text-gray-900 font-normal text-3xl mb-5 lg:w-60">Sua casa de cara nova</div>
                         <a href="#" class="bg-blue-800 font-semibold text-white py-2 px-6 rounded text-base hover:bg-yellow-400 hover:text-blue-800">
                             Ver mais
@@ -147,7 +147,7 @@
                      style="background-image: url('{{ asset('image/feshion.jpg') }}')" title="">
                 </div>
                 <div class="bg-white rounded-b p-4 flex flex-col justify-center leading-normal lg:rounded-b-none lg:w-[394px] lg:rounded-r">
-                    <div class="">
+                    <div>
                         <div class="text-gray-900 font-normal text-3xl mb-5 lg:w-60">O melhor da moda</div>
                         <a href="#" class="bg-blue-800 font-semibold text-white py-2 px-6 rounded text-base hover:bg-yellow-400 hover:text-blue-800">
                             Ver mais
