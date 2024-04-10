@@ -82,7 +82,7 @@
 
 <section id="featured-products">
     <div class="container">
-        <h2 class="text-blue-800 text-xl text-center font-semibold uppercase mt-10 pb-10">Oferta do dia</h2>
+        <h2 class="text-blue-800 text-xl text-center font-semibold uppercase sm:mt-5 pb-10">Oferta do dia</h2>
 
         <div class="multiple-items flex">
             @for ($i = 0; $i < 8; $i++)
@@ -127,34 +127,34 @@
 
 <section id="box-page">
     <div class="container">
-        <div class="pt-10 md:flex md:gap-8">
-            <div class="m-7 border-b-2 sm:m-0 md:w-1/2 xl:flex xl:h-64">
-                <div class="h-64 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden sm:h-48 lg:h-auto lg:w-64"
+        <div class="m-6 md:my-16 sm:mx-0 sm:flex sm:gap-4 md:gap-10">
+            <a href="#" class="m-6 sm:m-0 lg:grid lg:grid-cols-12 group transition transform hover:scale-110">
+                <div class="h-64 bg-cover text-center overflow-hidden sm:h-48 md:w-[330px] lg:col-span-5 lg:h-60 lg:w-60"
                      style="background-image: url('{{ asset('image/casa.jpg') }}')" title="">
                 </div>
-                <div class="bg-white rounded-b p-4 flex flex-col justify-center leading-normal lg:rounded-b-none lg:w-[394px] lg:rounded-r">
-                    <div>
-                        <div class="text-gray-900 font-normal text-3xl mb-5 lg:w-60">Sua casa de cara nova</div>
-                        <a href="#" class="bg-blue-800 font-semibold text-white py-2 px-6 rounded text-base hover:bg-yellow-400 hover:text-blue-800">
+                <div class="flex p-5 bg-white lg:justify-center lg:items-center lg:col-span-7">
+                    <div class="sm:w-60 md:w-[291px]">
+                        <div class="text-gray-900 font-normal text-2xl mb-2 lg:text-3xl lg:w-60">Sua casa de cara nova</div>
+                        <div class="bg-blue-800 w-24 text-center font-semibold text-white py-2 rounded text-base group-hover:bg-yellow-400 group-hover:text-blue-800">
                             Ver mais
-                        </a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="m-7 border-b-2 sm:m-0 md:w-1/2 xl:flex xl:h-64">
-                <div class="h-64 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden sm:h-48 lg:h-auto lg:w-64"
+            <a href="#" class="lg:grid lg:grid-cols-12 group transition transform hover:scale-110">
+                <div class="h-64 bg-cover text-center overflow-hidden sm:h-48 md:w-[330px] lg:col-span-5 lg:h-60 lg:w-60"
                      style="background-image: url('{{ asset('image/feshion.jpg') }}')" title="">
                 </div>
-                <div class="bg-white rounded-b p-4 flex flex-col justify-center leading-normal lg:rounded-b-none lg:w-[394px] lg:rounded-r">
-                    <div>
-                        <div class="text-gray-900 font-normal text-3xl mb-5 lg:w-60">O melhor da moda</div>
-                        <a href="#" class="bg-blue-800 font-semibold text-white py-2 px-6 rounded text-base hover:bg-yellow-400 hover:text-blue-800">
+                <div class="flex p-5 bg-white lg:justify-center lg:items-center lg:col-span-7">
+                    <div class="sm:w-60 md:w-[291px]">
+                        <div class="text-gray-900 font-normal text-2xl mb-2 lg:text-3xl lg:w-60">O melhor da moda</div>
+                        <div class="bg-blue-800 w-24 text-center font-semibold text-white py-2 rounded text-base group-hover:bg-yellow-400 group-hover:text-blue-800">
                             Ver mais
-                        </a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </section>
@@ -282,20 +282,22 @@
 <section class="bg-blue-800 py-10 sm:py-16 sm:mt-10">
     <div class="container">
         <div class="px-5 lg:flex justify-between items-center">
-            <div class="text-white pb-3 text-2xl sm:pb-6 sm:text-3xl lg:w-72 lg:pb-0 lg:text-2xl xl:text-3xl">
-                <h2>Receba ofertas e benefícios por e-mail</h2>
-            </div>
+            <div>
+                <div class="text-white pb-3 text-2xl sm:pb-6 sm:text-3xl lg:pb-5 lg:text-3xl">
+                    <h2>Receba ofertas e benefícios por e-mail</h2>
+                </div>
 
-            <div class="border-0 pb-6 lg:pb-0">
-                <input type="email" placeholder="Digite seu e-mail" class="bg-neutral-100 border border-neutral-200 rounded-lg px-6 py-2 mb-1 text-base hover:border-yellow-600 cursor-pointer outline-yellow-400 transition sm:mb-0 lg:">
-                <button class="cursor-pointer font-semibold text-white border border-yellow-600 rounded-lg px-6 py-2 hover:bg-yellow-400 hover:text-blue-800">
-                    Receber
-                </button>
+                <div class="border-0 pb-6 lg:pb-0">
+                    <input type="email" placeholder="Digite seu e-mail" class="bg-neutral-100 border border-neutral-200 rounded-lg px-6 py-1.5 mb-1 text-base hover:border-yellow-600 cursor-pointer outline-yellow-400 transition sm:mb-0 lg:">
+                    <button class="cursor-pointer font-semibold text-white border border-yellow-600 rounded-lg px-4 py-1.5 hover:bg-yellow-400 hover:text-blue-800">
+                        Receber
+                    </button>
+                </div>
             </div>
 
             <div class="text-white text-xl sm:text-2xl lg:text-xl lg:w-72 xl:text-2xl">
                 <h3 class="">Atendimento</h3>
-                <a href="#" class="hover:text-yellow-400">0800 111 0102</a>
+                <a href="#" class="text-yellow-400">0800 111 0102</a>
                 <p class="text-base">Horário de atendimento telefônico 7h00 às 21h00</p>
             </div>
         </div>
