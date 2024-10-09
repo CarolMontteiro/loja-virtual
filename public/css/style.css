@@ -34,3 +34,9 @@
         width: 100%;
     }
 }
+
+/*       PÁGINA DE IDENTIFICAÇÃO     */
+
+.span-required {
+    display: none;
+}

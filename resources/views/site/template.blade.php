@@ -270,5 +270,7 @@
 <script src="{{ asset('js/category-product.js') }}"></script>
 
 <script src="{{ asset('js/cart-and-favorites.js') }}"></script>
+
+<script src="{{ asset('js/identification.js') }}"></script>
 </body>
 </html>
