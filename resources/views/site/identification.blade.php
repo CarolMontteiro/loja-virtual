@@ -20,7 +20,7 @@
             </div>
 
             <div id="login" class=" md:w-1/2">
-                <h2 class="text-blue-800 text-2xl text-center font-semibold pt-10 ">Já sou cliente</h2>
+                <h2 class="text-blue-800 text-2xl text-center font-semibold pt-10 md:pt-0">Já sou cliente</h2>
                 <div id="errorLogin" class="pb-6 md:pt-2 text-center text-red-500"></div>
                 <fieldset class="w-4/5 mx-auto mb-6 sm:w-3/5">
                     <label for="email-login" class="text-lg pb-1 mr-2 text-gray-600 text-start block">Email</label>
