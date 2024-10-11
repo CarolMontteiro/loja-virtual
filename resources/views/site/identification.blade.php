@@ -3,7 +3,7 @@
 <section id="identification" class="pb-20">
     <div class="container">
         <h1 class="text-blue-800 text-lg text-center font-semibold uppercase py-6 sm:text-xl sm:py-10 md:text-2xl">Identificação</h1>
-        <form class="bg-white py-10 md:flex md:justify-between">
+        <form  class="bg-white py-10 md:flex md:justify-between">
             <div class="create-account border-b-2 pb-10 md:border-r-2 md:border-b-0 md:w-1/2 ">
                 <h2 class="text-blue-800 text-xl text-center font-semibold md:text-2xl">Crie uma conta</h2>
                 <div id="errorEmail" class="pb-6 md:pt-2 text-center text-red-500"></div>
@@ -14,7 +14,7 @@
                 </fieldset>
 
                 <div class="text-center">
-                    <button type="submit" class="bg-lime-600 text-white text-lg font-semibold mt-4 py-2 px-16 rounded-lg hover:bg-blue-800 hover:text-yellow-400" onclick="createAccount()">Continuar</button>
+                    <button type="button" class="bg-lime-600 text-white text-lg font-semibold mt-4 py-2 px-16 rounded-lg hover:bg-blue-800 hover:text-yellow-400" onclick="createAccount()">Continuar</button>
                     <span class="block mt-5 text-gray-600">Dúvidas?<a href="#" class="underline hover:text-blue-800"> Fale conosco</a></span>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                 </fieldset>
 
                 <div class="text-center">
-                    <button type="submit" class="bg-lime-600 text-white text-lg font-semibold mt-4 py-2 px-16 rounded-lg hover:bg-blue-800 hover:text-yellow-400" onclick="login()">Continuar</button>
+                    <button type="button" class="bg-lime-600 text-white text-lg font-semibold mt-4 py-2 px-16 rounded-lg hover:bg-blue-800 hover:text-yellow-400" onclick="login()">Continuar</button>
                     <a href="#" class="block mt-5 text-gray-600 underline hover:text-blue-800">Esqueci minha senha</a>
                 </div>
             </div>

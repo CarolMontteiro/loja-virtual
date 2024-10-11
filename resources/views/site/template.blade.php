@@ -22,7 +22,7 @@
                    class="btn-mobile md:hidden">
                     <i class="fa-solid text-blue-800 fa-bars text-2xl px-5"></i>
                 </a>
-                <a href="#" class="md:pl-5 font-semibold text-blue-800">LOGOMARCA</a>
+                <a href="{{route('home')}}" class="md:pl-5 font-semibold text-blue-800">LOGOMARCA</a>
             </div>
 
             <div class="search-box hidden bg-white h-8 p-2.5 rounded-xl md:flex md:justify-center md:items-center">
@@ -38,7 +38,7 @@
 
             <div class="btn-right">
                 <div class="flex">
-                    <a href="#" class="w-11 hidden md:block">
+                    <a href="{{route('identification')}}" class="w-11 hidden md:block">
                         <i class="fa-solid fa-user text-xl text-blue-800 xl:text-xl"></i>
                     </a>
 

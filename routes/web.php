@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('site.index');
-});
-Route::get('/identification', function () {
+})->name('home');
+Route::get('/login', function () {
     return view('site.identification');
-});
+})->name('identification');
