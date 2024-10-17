@@ -16,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('site.index');
 })->name('home');
+
 Route::get('/login', function () {
     return view('site.identification');
 })->name('identification');
+
+Route::get('/criar-conta', function () {
+    return view('site.create-account');
+})->name('create-account');
