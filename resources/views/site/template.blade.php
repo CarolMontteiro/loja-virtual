@@ -323,6 +323,8 @@
 
 <script src="{{ asset('js/cart-and-favorites.js') }}"></script>
 
-<script src="{{ asset('js/identification.js') }}"></script>
+<script src="{{ asset('js/identification.js') }}">
+
+</script><script src="{{ asset('js/create-account.js') }}"></script>
 </body>
 </html>

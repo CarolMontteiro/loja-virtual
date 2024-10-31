@@ -40,3 +40,6 @@
 .span-required {
     display: none;
 }
+.span-required-field {
+    display: none;
+}

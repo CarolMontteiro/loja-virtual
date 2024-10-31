@@ -1,58 +1,58 @@
 
-const campo = document.getElementsByClassName('required');
-const span = document.getElementsByClassName('span-required');
+const fieldErrorLogin = document.getElementsByClassName('required');
+const spanErrorLogin = document.getElementsByClassName('span-required');
 const emailRegex = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})$/;
 
 const VALID_EMAIL = 'carol123@gmail.com';
 const VALID_PASSWORD = 'Carol1.';
 
-function setError(index, mensage){
-    campo[index].style.border = '2px solid #e63636';
-    span[index].style.display = 'block';
+function setErrorLogin(index){
+    fieldErrorLogin[index].style.border = '2px solid #e63636';
+    spanErrorLogin[index].style.display = 'block';
 }
-function removeError(index) {
-    campo[index].style.border = '';
-    span[index].style.display = 'none';
+function removeErrorLogin(index) {
+    fieldErrorLogin[index].style.border = '';
+    spanErrorLogin[index].style.display = 'none';
 }
 function emailAcconuntValidate() {
-    const valueEmail = document.getElementById('email-acconunt').value;
-    if (!emailRegex.test(valueEmail)) {
-        setError(0);
-        span[0].textContent = "Adicione um email válido";
+    const valueEmailAcconunt = document.getElementById('email-acconunt').value;
+    if (!emailRegex.test(valueEmailAcconunt)) {
+        setErrorLogin(0);
+        spanErrorLogin[0].textContent = "Adicione um email válido";
     } else {
-        removeError(0);
+        removeErrorLogin(0);
     }
 }
 function createAccount() {
-    const valueEmail = document.getElementById('email-acconunt').value;
-    const errorEmail = document.getElementById('errorEmail');
+    const valueEmailAcconunt = document.getElementById('email-acconunt').value;
+    const errorEmailAcconunt = document.getElementById('errorEmail');
 
-    if (valueEmail.trim() === "") {
-        errorEmail.textContent = "O campo não pode estar vazio";
+    if (valueEmailAcconunt.trim() === "") {
+        errorEmailAcconunt.textContent = "O campo não pode estar vazio";
     }else {
-        errorEmail.textContent = "";
+        errorEmailAcconunt.textContent = "";
     }
 }
 function emailLoginValidate() {
     const valueEmailLogin = document.getElementById('email-login').value;
     if (valueEmailLogin.trim() === "") {
-        setError(1);
-        span[1].textContent = "O campo não pode estar vazio";
+        setErrorLogin(1);
+        spanErrorLogin[1].textContent = "O campo não pode estar vazio";
     } else if (!emailRegex.test(valueEmailLogin)) {
-        setError(1);
-        span[1].textContent = "Adicione um email válido";
+        setErrorLogin(1);
+        spanErrorLogin[1].textContent = "Adicione um email válido";
     } else {
-        removeError(1);
+        removeErrorLogin(1);
     }
 }
 function login() {
     const valueEmailLogin = document.getElementById('email-login').value;
-    const valuePassword = document.getElementById('password').value;
+    const valuePasswordLogin = document.getElementById('password').value;
     const errorLogin = document.getElementById('errorLogin');
 
-    if(valueEmailLogin.trim() === "" && valuePassword.trim() === "") {
+    if(valueEmailLogin.trim() === "" && valuePasswordLogin.trim() === "") {
         errorLogin.textContent = "O campo não pode estar vazio"
-    }else if(valueEmailLogin  === "carol123@gmail.com" && valuePassword === "Carol1.") {
+    }else if(valueEmailLogin  === "carol123@gmail.com" && valuePasswordLogin === "Carol1.") {
         errorLogin.textContent = ""
     } else{
         errorLogin.textContent = "Email ou senha inválida"
