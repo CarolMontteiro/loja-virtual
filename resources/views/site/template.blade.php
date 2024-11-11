@@ -20,7 +20,7 @@
                 <a href="#"
                    id="btn-menu"
                    class="btn-mobile md:hidden">
-                    <i class="fa-solid text-blue-800 fa-bars text-2xl px-5"></i>
+                        <i class="fa-solid text-blue-800 fa-bars text-2xl px-5"></i>
                 </a>
                 <a href="{{route('home')}}" class="md:pl-5 font-semibold text-blue-800">LOGOMARCA</a>
             </div>
@@ -42,21 +42,54 @@
                         <i class="fa-solid fa-user text-xl text-blue-800 xl:text-xl"></i>
                     </a>
 
-                    <a href="#" class="relative w-11">
-                        <i class="fa-solid fa-heart text-xl text-blue-800 xl:text-xl"></i>
-                        <span id="favorites-icon"
-                              class="absolute top-[-13px] bg-white pt-[2px] px-[4px] text-xs text-blue-800 rounded-full">
-                            0
-                        </span>
-                    </a>
+                    <div class="dropdown mr-8 group">
+                        <a href="#" class=" relative w-11">
+                            <i class="fa-solid fa-heart text-xl text-blue-800 xl:text-xl"></i>
+                            <span id="favorites-icon"
+                                  class="absolute top-[-13px] bg-white pt-[2px] px-[4px] text-xs text-blue-800 rounded-full">
+                                0
+                            </span>
+                            <div class="dropdown-menu absolute bg-white pt-3 px-3 mt-4 w-[35%] opacity-0 group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-opacity duration-300 ease-in-out">
+                                <ul>
+                                    <li class="font-semibold text-blue-800 text-sm pl-2 pb-2">Favoritos</li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="flex card bg-white p-2 mx-6 cursor-pointer hover:shadow sm:mx-2">
+                                                <div class="w-2/5">
+                                                    <img class="w-full bg-cover" src="{{ asset('image/slide1.jpg') }}" alt="">
+                                                </div>
+                                                <div class="description w-3/5">
+                                                    <h4 class="text-zinc-600 text-md font-light my-2" title="">iPad Mini 3 Apple 64GB Cinza Chumbo Tela 7,9” - Retina Wi-Fi Processador M7 Câmera 5MP + Frontal - iPad Mini</h4>
 
-                    <a href="#" class="relative w-11">
-                        <i class="fa-solid fa-cart-shopping text-xl text-blue-800 xl:text-xl"></i>
-                        <span id="cart-icon"
-                              class="absolute top-[-13px] right-[5px] bg-white pt-[2px] px-[4px] text-xs text-blue-800 rounded-full">
-                            0
-                        </span>
-                    </a>
+                                                    <div class="price mt-1">
+                                                        <h5 class="font-semibold text-zinc-600 text-lg">R$ 3.799,99</h5>
+                                                        <span class="text-[13px] font-light">em <span class="text-[13px] font-light text-lime-700">12x de R$ 316,66 sem juros</span></span>
+                                                    </div>
+                                                    <button class="text-sm text-blue-800 font-semibold hover:text-red-500">Excluir</button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li class="text-center py-3 hover:bg-zinc-100"><a class="text-blue-800" href="#">Ver todos os favoritos</a></li>
+                                </ul>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="">
+                        <a href="#" class="relative w-11">
+                            <i class="fa-solid fa-cart-shopping text-xl text-blue-800 xl:text-xl"></i>
+                            <span id="cart-icon"
+                                  class="absolute top-[-13px] right-[-15px] bg-white pt-[2px] px-[4px] text-xs text-blue-800 rounded-full">
+                                0
+                            </span>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -321,10 +354,12 @@
 
 <script src="{{ asset('js/category-product.js') }}"></script>
 
-<script src="{{ asset('js/cart-and-favorites.js') }}"></script>
-
 <script src="{{ asset('js/identification.js') }}">
 
 </script><script src="{{ asset('js/create-account.js') }}"></script>
+
+<script src="{{ asset('js/cart.js') }}"></script>
+<script src="{{ asset('js/favorites.js') }}"></script>
+
 </body>
 </html>
