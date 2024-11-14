@@ -64,3 +64,9 @@
 .span-required-field {
     display: none;
 }
+
+/*      PÁGINA DE CARRINHO      */
+
+.product-cart {
+    border-bottom: 1px solid #e3dfdf;
+}

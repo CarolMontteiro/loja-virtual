@@ -4,7 +4,7 @@
     <div class="container">
         <h1 class="text-blue-800 text-lg text-center font-semibold uppercase py-6 sm:text-xl sm:py-10 md:text-2xl">
                 Crie sua conta
-            </h1>
+        </h1>
 
         <form class="p-10">
             <fieldset class="mb-3 md:w-1/2 lg:w-2/5">

@@ -20,7 +20,7 @@
                 <a href="#"
                    id="btn-menu"
                    class="btn-mobile md:hidden">
-                        <i class="fa-solid text-blue-800 fa-bars text-2xl px-5"></i>
+                    <i class="fa-solid text-blue-800 fa-bars text-2xl px-5"></i>
                 </a>
                 <a href="{{route('home')}}" class="md:pl-5 font-semibold text-blue-800">LOGOMARCA</a>
             </div>
@@ -29,8 +29,8 @@
                 <input type="text"
                        name=""
                        class="search-text bg-neutral-800 border-0 bg-transparent outline-0 p-0 leading-[7px] md:w-60 lg:w-80"
-                       placeholder="O que você procura?">
-
+                       placeholder="O que você procura?"
+                >
                 <a href="#" class="search-bnt flex justify-center items-center">
                     <i class="fa-solid fa-magnifying-glass text-blue-800"></i>
                 </a>
@@ -49,23 +49,37 @@
                                   class="absolute top-[-13px] bg-white pt-[2px] px-[4px] text-xs text-blue-800 rounded-full">
                                 0
                             </span>
-                            <div class="dropdown-menu absolute bg-white pt-3 px-3 mt-4 w-[35%] opacity-0 group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-opacity duration-300 ease-in-out">
+                            <div class="dropdown-menu absolute bg-white pt-3 px-3 mt-4 w-[35%] opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-opacity duration-300 ease-in-out">
                                 <ul>
                                     <li class="font-semibold text-blue-800 text-sm pl-2 pb-2">Favoritos</li>
                                     <li>
                                         <a class="dropdown-item" href="#">
                                             <div class="flex card bg-white p-2 mx-6 cursor-pointer hover:shadow sm:mx-2">
                                                 <div class="w-2/5">
-                                                    <img class="w-full bg-cover" src="{{ asset('image/slide1.jpg') }}" alt="">
+                                                    <img class="w-full bg-cover"
+                                                         src="{{ asset('image/slide1.jpg') }}"
+                                                         alt=""
+                                                    >
                                                 </div>
-                                                <div class="description w-3/5">
-                                                    <h4 class="text-zinc-600 text-md font-light my-2" title="">iPad Mini 3 Apple 64GB Cinza Chumbo Tela 7,9” - Retina Wi-Fi Processador M7 Câmera 5MP + Frontal - iPad Mini</h4>
 
+                                                <div class="description w-3/5">
+                                                    <h4 class="text-zinc-600 text-md font-light my-2" title="">
+                                                        iPad Mini 3 Apple 64GB Cinza Chumbo Tela 7,9” - Retina Wi-Fi
+                                                        Processador M7 Câmera 5MP + Frontal - iPad Mini
+                                                    </h4>
                                                     <div class="price mt-1">
-                                                        <h5 class="font-semibold text-zinc-600 text-lg">R$ 3.799,99</h5>
-                                                        <span class="text-[13px] font-light">em <span class="text-[13px] font-light text-lime-700">12x de R$ 316,66 sem juros</span></span>
+                                                        <h5 class="font-semibold text-zinc-600 text-lg">
+                                                            R$ 3.799,99
+                                                        </h5>
+                                                        <span class="text-[13px] font-light">em
+                                                            <span class="text-[13px] font-light text-lime-700">
+                                                                12x de R$ 316,66 sem juros
+                                                            </span>
+                                                        </span>
                                                     </div>
-                                                    <button class="text-sm text-blue-800 font-semibold hover:text-red-500">Excluir</button>
+                                                    <button class="text-sm text-blue-800 font-semibold hover:text-red-500">
+                                                        Excluir
+                                                    </button>
                                                 </div>
                                             </div>
                                         </a>
@@ -73,14 +87,17 @@
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li class="text-center py-3 hover:bg-zinc-100"><a class="text-blue-800" href="#">Ver todos os favoritos</a></li>
+                                    <li class="text-center py-3 hover:bg-zinc-100">
+                                        <a class="text-blue-800" href="#">
+                                            Ver todos os favoritos
+                                        </a>
+                                    </li>
                                 </ul>
-
                             </div>
                         </a>
                     </div>
 
-                    <div class="">
+                    <div>
                         <a href="#" class="relative w-11">
                             <i class="fa-solid fa-cart-shopping text-xl text-blue-800 xl:text-xl"></i>
                             <span id="cart-icon"
@@ -89,7 +106,6 @@
                             </span>
                         </a>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -103,8 +119,8 @@
                 <input type="text"
                        name=""
                        class="search-text text-white w-full border-0 bg-transparent outline-0 leading-[7px]"
-                       placeholder="O que você procura?">
-
+                       placeholder="O que você procura?"
+                >
                 <a href="#" class="search-bnt flex justify-center items-center">
                     <i class="fa-solid fa-magnifying-glass text-yellow-400"></i>
                 </a>
@@ -161,7 +177,9 @@
                 <nav class="pt-3">
                     <ul class="block">
                         <li>
-                            <div class="text-sm text-[#034AAD] font-semibold uppercase p-3">Destaques</div>
+                            <div class="text-sm text-[#034AAD] font-semibold uppercase p-3">
+                                Destaques
+                            </div>
                         </li>
                         <li>
                             <a href="#" class="w-full block py-1.5 px-3 hover:text-blue-800 hover:bg-yellow-400">
@@ -184,7 +202,9 @@
                             </a>
                         </li>
                         <li>
-                            <div class="text-sm text-[#034AAD] font-semibold uppercase p-3">Compras por categoria</div>
+                            <div class="text-sm text-[#034AAD] font-semibold uppercase p-3">
+                                Compras por categoria
+                            </div>
                         </li>
                         <li>
                             <a href="#" class="w-full block py-1.5 px-3 hover:text-blue-800 hover:bg-yellow-400">
@@ -207,7 +227,9 @@
                             </a>
                         </li>
                         <li>
-                            <div class="text-sm text-[#034AAD] font-semibold uppercase p-3">Ajuda e configurações</div>
+                            <div class="text-sm text-[#034AAD] font-semibold uppercase p-3">
+                                Ajuda e configurações
+                            </div>
                         </li>
                         <li>
                             <a href="#" class="w-full block py-1.5 px-3 hover:text-blue-800 hover:bg-yellow-400">
@@ -216,7 +238,8 @@
                         </li>
                         <li>
                             <a href="#"
-                               class="w-full block py-1.5 px-3 hover:text-blue-800 hover:bg-yellow-400">Ajuda
+                               class="w-full block py-1.5 px-3 hover:text-blue-800 hover:bg-yellow-400">
+                                Ajuda
                             </a>
                         </li>
                         <li>
@@ -244,7 +267,9 @@
         <div>
             <div class="grid grid-cols-1 mx-5 mt-10 gap-8 sm:mx-0 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
                 <div>
-                    <h2 class="text-blue-800 mb-6 text-base font-semibold uppercase">Atenção Clientes</h2>
+                    <h2 class="text-blue-800 mb-6 text-base font-semibold uppercase">
+                        Atenção Clientes
+                    </h2>
                     <ul class="text-gray-500 font-medium">
                         <li class="mb-4">
                             <a href="#" class="hover:underline hover:text-yellow-400">Soluções</a>
@@ -272,8 +297,11 @@
                         </li>
                     </ul>
                 </div>
+
                 <div>
-                    <h2 class="text-blue-800 mb-6 text-base font-semibold uppercase">Sobre LOGOMARCA</h2>
+                    <h2 class="text-blue-800 mb-6 text-base font-semibold uppercase">
+                        Sobre LOGOMARCA
+                    </h2>
                     <ul class="text-gray-500 font-medium">
                         <li class="mb-4">
                             <a href="#" class="hover:underline hover:text-yellow-400">Sobre nós</a>
@@ -289,8 +317,11 @@
                         </li>
                     </ul>
                 </div>
+
                 <div>
-                    <h2 class="text-blue-800 mb-6 text-base font-semibold uppercase">Legal</h2>
+                    <h2 class="text-blue-800 mb-6 text-base font-semibold uppercase">
+                        Legal
+                    </h2>
                     <ul class="text-gray-500 font-medium">
                         <li class="mb-4">
                             <a href="#" class="hover:underline hover:text-yellow-400">Política de privacidade</a>
@@ -300,8 +331,11 @@
                         </li>
                     </ul>
                 </div>
+
                 <div>
-                    <h2 class="text-blue-800 mb-6 text-base font-semibold uppercase">siga-nos</h2>
+                    <h2 class="text-blue-800 mb-6 text-base font-semibold uppercase">
+                        siga-nos
+                    </h2>
                     <div class="flex mt-4 sm:mt-0">
                         <a href="#" class="text-gray-500 hover:text-blue-800">
                             <i class="fa-brands fa-facebook text-xl"></i>
@@ -323,12 +357,15 @@
                 </div>
             </div>
         </div>
+
         <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8"/>
+
         <div class="text-center">
             <div class="mb-2">
                 <a href="#">
                     <span
-                        class="text-blue-800 self-center text-2xl font-semibold whitespace-nowrap">LOGOMARCA
+                        class="text-blue-800 self-center text-2xl font-semibold whitespace-nowrap">
+                        LOGOMARCA
                     </span>
                 </a>
             </div>

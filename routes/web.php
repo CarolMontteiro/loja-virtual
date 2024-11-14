@@ -24,3 +24,7 @@ Route::get('/login', function () {
 Route::get('/criar-conta', function () {
     return view('site.create-account');
 })->name('create-account');
+
+Route::get('/carrinho', function () {
+    return view('site.cart');
+})->name('cart');
