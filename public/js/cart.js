@@ -1,8 +1,31 @@
 
+function isEmptyCart() {
+    let viewEmptyCart = JSON.parse(localStorage.getItem("cart")) || [];
 
+    return viewEmptyCart.length === 0;
+}
+function addToCart(item) {
 
+    if (isEmptyCart()) {
+        localStorage.setItem("cart", JSON.stringify([item]));
+        console.log("Carrinho atualizado: ", JSON.parse(localStorage.getItem("cart")));
+        return;
+    }
 
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    // console.log("carrinho atual", cart)
 
+    const itemIndex = cart.findIndex(cartItem => cartItem.id === item.id);
+
+    if(itemIndex !== -1) {
+        cart[itemIndex].quantity += 1;
+        console.log("quantidade atualizada", cart[itemIndex]);
+    }else {
+        cart.push(item);
+        console.log("Novo item adicionado:", item)
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
 
 
 

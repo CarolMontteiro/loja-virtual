@@ -91,10 +91,12 @@
                         <i class="fa-solid fa-heart text-zinc-300 text-2xl hover:text-red-600"></i>
                     </div>
                     <div class="image group-hover:transform group-hover:scale-95">
-                        <img class="w-full bg-cover" src="{{ asset('image/slide1.jpg') }}" alt="">
+                        <img class="w-full bg-cover" src="{{ asset('image/slide8.jpg') }}" alt="">
                     </div>
                     <div class="description text-center">
-                        <h4 class="text-zinc-600 text-md font-light my-2" title="">iPad Mini 3 Apple 64GB Cinza Chumbo Tela 7,9” - Retina Wi-Fi Processador M7 Câmera 5MP + Frontal - iPad Mini</h4>
+                        <h4 class="text-zinc-600 text-md font-light my-2" title="">
+                            Cropped/Blusa Manga Longa Moletom Feminino Preto Com Capuz
+                        </h4>
 
                         <div class="flex justify-center">
                             <div class="rating text-yellow-500 text-sm">
@@ -104,20 +106,24 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
                             </div>
-                            <span class="text-sm text-zinc-500">(2000)</span>
+                            <span class="text-sm text-zinc-500">(1240)</span>
                         </div>
 
 
                         <div class="price mt-1 mb-2">
-                            <h5 class="line-through font-light text-zinc-500 text-sm">R$ 3.999,99</h5>
-                            <h5 class="font-semibold text-zinc-500 text-lg mb-1.5">R$ 3.799,99</h5>
+                            <h5 class="line-through font-light text-zinc-500 text-sm">R$ 79,99</h5>
+                            <h5 class="font-semibold text-zinc-500 text-lg mb-1.5">R$ 65,99</h5>
                         </div>
                     </div>
                     <div class="cart text-center">
-                        <button class="add-to-cart-btn font-semibold rounded-lg py-1.5 px-6 border border-blue-800 text-blue-800 transition hover:transform hover:scale-110 group-hover:bg-blue-800 group-hover:text-white">
+                        <button onclick="addToCart({id: {{ $i }}, name: 'blusa', quantity: 1, value:60})" class="add-to-cart-btn font-semibold mb-3 rounded-lg py-1.5 px-6 border border-blue-800 text-blue-800 transition hover:transform hover:scale-110 group-hover:bg-blue-800 group-hover:text-white">
                             Adicionar
                             <i class="fa-solid fa-cart-shopping text-lg ml-2 group-hover:text-yellow-400"></i>
                         </button>
+{{--                        <button onclick="removeCart({{ $i }})" class="add-to-cart-btn font-semibold rounded-lg py-1.5 px-6 text-white bg-red-500">--}}
+{{--                           Remover--}}
+{{--                            <i class="fa-solid fa-cart-shopping text-lg ml-2 group-hover:text-yellow-400"></i>--}}
+{{--                        </button>--}}
                     </div>
                 </div>
             @endfor
