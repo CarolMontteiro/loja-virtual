@@ -120,10 +120,10 @@
                             Adicionar
                             <i class="fa-solid fa-cart-shopping text-lg ml-2 group-hover:text-yellow-400"></i>
                         </button>
-{{--                        <button onclick="removeCart({{ $i }})" class="add-to-cart-btn font-semibold rounded-lg py-1.5 px-6 text-white bg-red-500">--}}
-{{--                           Remover--}}
-{{--                            <i class="fa-solid fa-cart-shopping text-lg ml-2 group-hover:text-yellow-400"></i>--}}
-{{--                        </button>--}}
+                        <button onclick="removeToCart({{ $i }})" class="add-to-cart-btn font-semibold rounded-lg py-1.5 px-6 text-white bg-red-500">
+                           Remover
+                            <i class="fa-solid fa-cart-shopping text-lg ml-2 group-hover:text-yellow-400"></i>
+                        </button>
                     </div>
                 </div>
             @endfor

@@ -27,9 +27,130 @@ function addToCart(item) {
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
+// function removeToCart(item) {
+//
+//     let cart = JSON.parse(localStorage.getItem("cart"));
+//
+//     const itemIndex = cart.findIndex(cartItem => cartItem.id === item.id);
+//     console.log("teste1")
+//     if(itemIndex !== -1) {
+//         console.log("teste2")
+//         if (cart[itemIndex].quantity > 1) {
+//             cart[itemIndex].quantity -= 1;
+//             console.log("quantidade atualizada 1 item removio", cart[itemIndex]);
+//         }else {
+//             cart.splice(itemIndex, 1);
+//             console.log(" item removido:", item)
+//         }
+//
+//     }
+//     localStorage.setItem("cart", JSON.stringify(cart));
+// }
+
+function removeToCart(itemId) {
+    let cart = JSON.parse(localStorage.getItem("cart"));
+
+    const itemIndex = cart.findIndex(cartItem => cartItem.id === itemId);
+
+    if (itemIndex !== -1) {
+        if (cart[itemIndex].quantity > 1) {
+            cart[itemIndex].quantity -= 1;
+            console.log("Quantidade atualizada. 1 item removido:", cart[itemIndex]);
+        } else {
+            cart.splice(itemIndex, 1);
+            console.log("Item removido:", cart[itemIndex]);
+        }
+    } else {
+        console.warn("Item não encontrado no carrinho.");
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function removeToCart(itemId) {
+//     let cart = JSON.parse(localStorage.getItem("cart"));
+//     // console.log("Cart antes da remoção:", cart);
+//     // console.log("ID recebido para remoção:", itemId);
+//
+//     // if (!cart) {
+//     //     console.error("Carrinho está vazio ou não inicializado.");
+//     //     return;
+//     // }
+//
+//     const itemIndex = cart.findIndex(cartItem => cartItem.id === itemId);
+//
+//
+//     // const itemIndex = cart.findIndex(cartItem => {
+//     //     console.log("Comparando:", cartItem.id, "com", itemId);
+//     //     return cartItem.id === itemId;
+//     // });
+//
+//     if (itemIndex !== -1) {
+//         // console.log("Item encontrado no carrinho.");
+//         if (cart[itemIndex].quantity > 1) {
+//             cart[itemIndex].quantity -= 1;
+//             console.log("Quantidade atualizada. 1 item removido:", cart[itemIndex]);
+//         } else {
+//             cart.splice(itemIndex, 1);
+//             console.log("Item removido:", cart[itemIndex]);
+//         }
+//     } else {
+//         console.warn("Item não encontrado no carrinho.");
+//     }
+//
+//     localStorage.setItem("cart", JSON.stringify(cart));
+//     // console.log("Cart atualizado:", cart);
+// }
+
+//
+// let a = 5;
 
 
 
