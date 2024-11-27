@@ -1,4 +1,9 @@
 
+const cart = "cart";
+
+function setItem(cart) {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
 function isEmptyCart() {
     let viewEmptyCart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -7,8 +12,7 @@ function isEmptyCart() {
 function addToCart(item) {
 
     if (isEmptyCart()) {
-        localStorage.setItem("cart", JSON.stringify([item]));
-        console.log("Carrinho atualizado: ", JSON.parse(localStorage.getItem("cart")));
+        setItem([item]);
         return;
     }
 
@@ -18,12 +22,11 @@ function addToCart(item) {
 
     if(itemIndex !== -1) {
         cart[itemIndex].quantity += 1;
-        console.log("Mais 1 tem adicionado", cart[itemIndex]);
     }else {
         cart.push(item);
-        console.log("Novo item adicionado:", item)
     }
-    localStorage.setItem("cart", JSON.stringify(cart));
+
+    setItem(cart);
 }
 
 function removeToCart(itemId) {
@@ -35,16 +38,22 @@ function removeToCart(itemId) {
     if(itemIndex !== -1) {
         if (cart[itemIndex].quantity > 1) {
             cart[itemIndex].quantity -= 1;
-            console.log("1 item removio", cart[itemIndex]);
         }else {
             cart.splice(itemIndex, 1);
-            console.log(" item removido:", itemId)
         }
+
+        setItem(cart);
     }
-    localStorage.setItem("cart", JSON.stringify(cart));
 }
 
+function removeFromCart(itemId) {
+    // localStorage.clear('cart');
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+    cart = cart.filter(cartItem => cartItem.id !== itemId);
+
+    setItem(cart);
+}
 
 
 
