@@ -1,5 +1,5 @@
 
-const cart = "cart";
+// const cart = "cart";
 
 function setItem(cart) {
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -13,6 +13,7 @@ function addToCart(item) {
 
     if (isEmptyCart()) {
         setItem([item]);
+        updateIconAddToCart(1);
         return;
     }
 
@@ -22,11 +23,13 @@ function addToCart(item) {
 
     if(itemIndex !== -1) {
         cart[itemIndex].quantity += 1;
+
     }else {
         cart.push(item);
+        setItem(cart);
     }
 
-    setItem(cart);
+    updateIconAddToCart(cart.length);
 }
 
 function removeToCart(itemId) {
@@ -38,16 +41,17 @@ function removeToCart(itemId) {
     if(itemIndex !== -1) {
         if (cart[itemIndex].quantity > 1) {
             cart[itemIndex].quantity -= 1;
+
         }else {
             cart.splice(itemIndex, 1);
+            setItem(cart);
         }
 
-        setItem(cart);
+        updateIconAddToCart(cart.length);
     }
 }
 
 function removeFromCart(itemId) {
-    // localStorage.clear('cart');
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     cart = cart.filter(cartItem => cartItem.id !== itemId);
@@ -55,18 +59,26 @@ function removeFromCart(itemId) {
     setItem(cart);
 }
 
+function updateIconAddToCart(count = 0) {
+    const cartIcon = document.getElementById("cart-icon");
 
+    if(count !== 0) {
+        cartIcon.textContent = count;
+    }else {
+        cartIcon.textContent = "0";
+    }
+}
 
+function countItemsCart() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+    let count =  cart.length;
 
-
-
-
-
-
-
-
-
+    updateIconAddToCart(count)
+}
+document.addEventListener("DOMContentLoaded", (event) => {
+    countItemsCart()
+});
 
 
 
@@ -92,25 +104,7 @@ function removeFromCart(itemId) {
 
 // //  PÁGINA INDEX ---> INTERAÇÃO COM OS ÍCONE DE CARRINHO NO MENU
 //
-// document.addEventListener("DOMContentLoaded", function (){
-//     const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
-//     const cartIcon = document.getElementById("cart-icon");
-//
-//     addToCartButtons.forEach(button => {
-//         button.addEventListener("click", function() {
-//             // Rolando a página para o topo
-//             window.scrollTo({
-//                 top: 0,
-//                 behavior: "smooth"
-//             });
-//
-//             // Atualizando o valor do ícone do carrinho
-//             let currentCartValueMenu = parseInt(cartIcon.textContent);
-//             let newCartValueMenu = currentCartValueMenu + 1;
-//             cartIcon.textContent = newCartValueMenu;
-//         });
-//     });
-// });
+
 //
 // //  PÁGINA DE CARRINHO --->
 //
