@@ -81,9 +81,112 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 
+//        PÁGINA DE CARRINHO
+
+function divAddToCart(){
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let contentProduct = document.getElementById("content-product");
+    // console.log(cart)
+
+    if (cart.length === 0) {
+        contentProduct.textContent = "Seu carrinho está vazio.";
+        return;
+    }
+
+   cart.forEach(item => {
+       // DESCRIÇÃO DO ITEM
+       let divDescriptionProductInCart = document.createElement('div');
+       divDescriptionProductInCart.className = "product-description";
+
+       let divDescriptionItemInCart = document.createElement('div');
+       divDescriptionItemInCart.className = "description-item-cart";
+
+       let itemTitleInCart = document.createElement("h4");
+       itemTitleInCart.className = "item-title";
+       itemTitleInCart.textContent = item.name || "Produto sem título";
+
+       divDescriptionItemInCart.appendChild(itemTitleInCart);
+       divDescriptionProductInCart.appendChild(divDescriptionItemInCart);
+
+
+       // QUANTIDADE
+       let divQuantityProductInCart = document.createElement('div');
+       divQuantityProductInCart.className = "product-quantity";
+
+       let removeItemCartButton = document.createElement("button");
+       removeItemCartButton.type = "button";
+       removeItemCartButton.className = "remove-item";
+       removeItemCartButton.textContent = "-";
+
+
+       let quantityInputItemInCart = document.createElement("input");
+       quantityInputItemInCart.type = "text";
+       quantityInputItemInCart.className = "product-quantity-input";
+       quantityInputItemInCart.value = item.quantity;
+       quantityInputItemInCart.readOnly = true;
+
+       let addItemCartButton = document.createElement("button");
+       addItemCartButton.type = "button";
+       addItemCartButton.className = "add-item";
+       addItemCartButton.textContent = "+";
+
+       removeButton.addEventListener("click", () => {
+           removeToCart(item.id);
+           divAddToCart();
+       });
+
+       addButton.addEventListener("click", () => {
+           addToCart(item);
+           divAddToCart();
+       });
+
+       removeFromCartButton.addEventListener("click", () => {
+           removeFromCart(item.id);
+           divAddToCart();
+       });
+
+       divQuantityProductInCart.appendChild(removeItemCartButton,);
+       divQuantityProductInCart.appendChild(quantityInputItemInCart);
+       divQuantityProductInCart.appendChild(addItemCartButton);
+
+
+       let divPriceProductFromTheCart = document.createElement('div');
+       divPriceProductFromTheCart.className = "product-price";
+
+       let divRemoveFromCart = document.createElement('div');
+       divRemoveFromCart.className = "remove-from-cart";
 
 
 
+
+       console.log(cart)
+
+
+
+
+
+
+       divRemoveFromCart.addEventListener("click", () => {
+           removeFromCart(item.id);
+           divAddToCart();
+       });
+
+       //   DIV PRINCIPAL
+       let productDiv = document.createElement('div');
+       productDiv.className = "product-cart";
+       productDiv.appendChild(divDescriptionProductInCart);
+       productDiv.appendChild(divQuantityProductInCart);
+       productDiv.appendChild(divPriceProductFromTheCart);
+       productDiv.appendChild(divRemoveFromCart);
+
+       // Adiciona o produto ao contêiner do carrinho
+       contentProduct.appendChild(productDiv);
+
+
+   })
+}
+divAddToCart()
 
 
 

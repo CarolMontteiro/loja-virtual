@@ -42,7 +42,7 @@
                         <i class="fa-solid fa-user text-xl text-blue-800 xl:text-xl"></i>
                     </a>
 
-                    <div class="dropdown mr-8 group">
+                    <div class="dropdown mr-6 group md:mr-8">
                         <a href="#" class=" relative w-11">
                             <i class="fa-solid fa-heart text-xl text-blue-800 xl:text-xl"></i>
                             <span id="favorites-icon"
@@ -97,8 +97,8 @@
                         </a>
                     </div>
 
-                    <div>
-                        <a href="#" class="relative w-11">
+                    <div class="mr-8 md:mr-0">
+                        <a href="{{route('cart')}}" class="relative w-11">
                             <i class="fa-solid fa-cart-shopping text-xl text-blue-800 xl:text-xl"></i>
                             <span id="cart-icon"
                                   class="absolute top-[-13px] right-[-15px] bg-white pt-[2px] px-[4px] text-xs text-blue-800 rounded-full">

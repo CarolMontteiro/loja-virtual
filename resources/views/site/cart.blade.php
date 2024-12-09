@@ -14,77 +14,46 @@
                         <span class="w-1/5 py-3 pl-2 uppercase">Total</span>
                     </div>
 
-                    <div class="product-cart flex h-36 py-5">
-                        <div class="flex w-1/2 card pl-1 cursor-pointer group overflow-hidden">
-                            <div class="w-[200px] h-[200px] ">
-                                <img class="w-full"
-                                     src="{{ asset('image/slide8.jpg') }}"
-                                     alt=""
-                                >
-                            </div>
+                    <div id="content-product">
 
-                            <div class="description">
-                                <h4 class="text-zinc-600 text-sm font-normal pl-2 pr-3 my-2 group-hover:text-blue-800">
-                                    Cropped/Blusa Manga Longa Moletom Feminino Preto Com Capuz
-                                </h4>
-                                <span class="text-zinc-600 text-sm pl-2">Cor: Preta</span>
-                                <span class="text-zinc-600 text-sm pl-2">Tamanho: P</span>
-                            </div>
-                        </div>
-
-                        <div class="w-[18%] flex justify-center items-center relative">
-                            <button type="button" class="remove-item absolute left-[20px] text-[30px] hover:text-red-500">-</button>
-                            <input type="text" value="1" min="0" class="product-quantity-input w-[110px] h-[30px] text-center bg-zinc-100 rounded">
-                            <button type="button" class="add-item absolute right-[20px] text-lg hover:text-blue-800">+</button>
-                        </div>
-
-                        <div class="w-1/5 flex flex-col justify-center items-center text-center">
-                            <div class="price">
-                                <h5 class="line-through font-light text-zinc-500 text-xs">R$ 79,99</h5>
-                                <h5 class="cart-product-price font-semibold text-zinc-500 text-md mb-1.5">R$ 65,99</h5>
-                            </div>
-                        </div>
-
-                        <button class="remove-product-button flex justify-center items-center w-[12%] font-semibold">
-                            <i class="fa-regular fa-circle-xmark text-2xl text-blue-800 hover:text-red-500"></i>
-                        </button>
-                    </div>
-
-                    <div class="product-cart flex h-36 py-5">
-                        <div class="flex w-1/2 card pl-1 cursor-pointer group overflow-hidden">
-                            <div class="w-[200px] h-[200px]">
-                                <img class="w-full"
-                                     src="{{ asset('image/caminhapet.jpg') }}"
-                                     alt=""
-                                >
-                            </div>
-
-                            <div class="description">
-                                <h4 class="text-zinc-600 text-sm font-normal pl-2 pr-3 my-2 group-hover:text-blue-800">
-                                    Cropped/Blusa Manga Longa Moletom Feminino Preto Com Capuz
-                                </h4>
-                                <span class="text-zinc-600 text-sm pl-2">Cor: Vermelho</span>
-                            </div>
-                        </div>
-
-                        <div class="w-[18%] flex justify-center items-center relative">
-                            <button type="button" class="remove-item absolute left-[20px] text-[30px] hover:text-red-500">-</button>
-                            <input type="text" value="2" min="0" class="product-quantity-input w-[110px] h-[30px] text-center bg-zinc-100 rounded">
-                            <button type="button" class="add-item absolute right-[20px] text-lg hover:text-blue-800">+</button>
-                        </div>
-
-                        <div class="w-1/5 flex flex-col justify-center items-center text-center">
-                            <div class="price">
-                                <h5 class="line-through font-light text-zinc-500 text-xs">R$ 56,99</h5>
-                                <h5 class="cart-product-price font-semibold text-zinc-500 text-md mb-1.5">R$ 49,99</h5>
-                            </div>
-                        </div>
-
-                        <button class="remove-product-button flex justify-center items-center w-[12%] font-semibold">
-                            <i class="fa-regular fa-circle-xmark text-2xl text-blue-800 hover:text-red-500"></i>
-                        </button>
                     </div>
                 </div>
+
+{{--                <div class="product-cart flex h-36 py-5">--}}
+{{--                    <div class="flex w-1/2 product-description pl-1 cursor-pointer group overflow-hidden">--}}
+{{--                        <div class="w-[200px] h-[200px] ">--}}
+{{--                            <img class="w-full"--}}
+{{--                                 src="{{ asset('image/slide8.jpg') }}"--}}
+{{--                                 alt=""--}}
+{{--                            >--}}
+{{--                        </div>--}}
+
+{{--                        <div class="description-item-cart">--}}
+{{--                            <h4 class="item-title text-zinc-600 text-sm font-normal pl-2 pr-3 my-2 group-hover:text-blue-800">--}}
+{{--                                Cropped/Blusa Manga Longa Moletom Feminino Preto Com Capuz--}}
+{{--                            </h4>--}}
+{{--                            <span class="text-zinc-600 text-sm pl-2">Cor: Preta</span>--}}
+{{--                            <span class="text-zinc-600 text-sm pl-2">Tamanho: P</span>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
+{{--                    <div class="product-quantity w-[18%] flex justify-center items-center relative">--}}
+{{--                        <button type="button" class="remove-item absolute left-[20px] text-[30px] hover:text-red-500">-</button>--}}
+{{--                        <input type="text" value="1" min="0" class="product-quantity-input w-[110px] h-[30px] text-center bg-zinc-100 rounded">--}}
+{{--                        <button type="button" class="add-item absolute right-[20px] text-lg hover:text-blue-800">+</button>--}}
+{{--                    </div>--}}
+
+{{--                    <div class="product-price w-1/5 flex flex-col justify-center items-center text-center">--}}
+{{--                        <div class="price">--}}
+{{--                            <h5 class="line-through font-light text-zinc-500 text-xs">R$ 79,99</h5>--}}
+{{--                            <h5 class="cart-product-price font-semibold text-zinc-500 text-md mb-1.5">R$ 65,99</h5>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
+{{--                    <button onclick="" class="remove-from-cart flex justify-center items-center w-[12%] font-semibold">--}}
+{{--                        <i class="fa-regular fa-circle-xmark text-2xl text-blue-800 hover:text-red-500"></i>--}}
+{{--                    </button>--}}
+{{--                </div>--}}
 
                 <div class="bg-zinc-200 w-[30%] px-5">
                     <h3 class="text-center font-semibold uppercase py-3 border-2 border-b-zinc-300">Resumo da Compra</h3>
