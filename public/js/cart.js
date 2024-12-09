@@ -13,20 +13,26 @@ function addToCart(item) {
 
     if (isEmptyCart()) {
         setItem([item]);
+        console.log("Carrinho inicializado com o primeiro item:", [item]);
         updateIconAddToCart(1);
         return;
     }
 
     let cart = JSON.parse(localStorage.getItem("cart"));
 
+    console.log(cart)
+
     const itemIndex = cart.findIndex(cartItem => cartItem.id === item.id);
 
     if(itemIndex !== -1) {
         cart[itemIndex].quantity += 1;
+        setItem(cart);
+        console.log("Mais 1 item adicionado ao carrinho:", cart[itemIndex]);
 
     }else {
         cart.push(item);
         setItem(cart);
+        console.log("Novo item adicionado ao carrinho:", item);
     }
 
     updateIconAddToCart(cart.length);
@@ -42,10 +48,13 @@ function removeToCart(itemId) {
 
         if (cart[itemIndex].quantity > 1) {
             cart[itemIndex].quantity -= 1;
+            setItem(cart)
+            console.log("Menos 1 item no carrinho:", cart[itemIndex]);
 
         }else {
             cart.splice(itemIndex, 1);
             setItem(cart);
+            console.log("item removido do carrinho:", itemId);
         }
 
         updateIconAddToCart(cart.length);
