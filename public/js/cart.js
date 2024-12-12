@@ -91,6 +91,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 
+// function updatePriceWithQuantity() {
+//     let cart = JSON.parse(localStorage.getItem("cart")) || [];
+//
+//     let totalQuantity = 0;
+//     let totalPrice = 0;
+//
+//     cart.forEach(item => {
+//         totalQuantity += item.quantity;
+//         totalPrice += item.quantity * item.value;
+//     })
+//
+//     console.log( totalQuantity, totalPrice)
+// }
+
 //        PÁGINA DE CARRINHO
 
 function divAddToCart() {
@@ -110,7 +124,8 @@ function divAddToCart() {
     }
 
     cart.forEach(item => {
-        // DESCRIÇÃO DO ITEM
+
+        // DESCRPTON ITEM
         let divDescriptionProductInCart = document.createElement('div');
         divDescriptionProductInCart.className = "product-description";
 
@@ -124,7 +139,9 @@ function divAddToCart() {
         divDescriptionItemInCart.appendChild(itemTitleInCart);
         divDescriptionProductInCart.appendChild(divDescriptionItemInCart);
 
-        // QUANTIDADE
+
+
+        // QUANTITY
         let divQuantityProductInCart = document.createElement('div');
         divQuantityProductInCart.className = "product-quantity";
 
@@ -148,7 +165,22 @@ function divAddToCart() {
         divQuantityProductInCart.appendChild(quantityInputItemInCart);
         divQuantityProductInCart.appendChild(addItemCartButton);
 
-        // PREÇO
+        removeItemCartButton.addEventListener("click", () => {
+            let newQuantity = parseInt(quantityInputItemInCart.value) - 1;
+            quantityInputItemInCart.value = newQuantity > 0 ? newQuantity : 0;
+            removeToCart(item.id, newQuantity);
+
+        });
+
+        addItemCartButton.addEventListener("click", () => {
+            let newQuantity = parseInt(quantityInputItemInCart.value) + 1;
+            quantityInputItemInCart.value = newQuantity;
+            addToCart(item, newQuantity);
+        });
+
+
+
+        // PRICE
         let divPriceProductFromTheCart = document.createElement('div');
         divPriceProductFromTheCart.className = "product-price";
 
@@ -156,7 +188,9 @@ function divAddToCart() {
         priceText.textContent = `R$ ${item.value.toFixed(2).replace('.', ',')}`;
         divPriceProductFromTheCart.appendChild(priceText);
 
-        // BOTÃO REMOVER
+
+
+        //  REMOVER BUTTON
         let divRemoveFromCart = document.createElement('div');
         divRemoveFromCart.className = "remove-from-cart";
 
@@ -165,18 +199,11 @@ function divAddToCart() {
         removeFromCartButton.innerHTML = `<i class="fa-regular fa-circle-xmark"></i>`;
         divRemoveFromCart.appendChild(removeFromCartButton);
 
-        // EVENTOS
-        removeItemCartButton.addEventListener("click", () => {
-            removeToCart(item.id);
-        });
-
-        addItemCartButton.addEventListener("click", () => {
-            addToCart(item);
-        });
-
         removeFromCartButton.addEventListener("click", () => {
             removeFromCart(item.id);
         });
+
+
 
         // DIV PRINCIPAL
         let productDiv = document.createElement('div');
@@ -192,7 +219,7 @@ function divAddToCart() {
 divAddToCart();
 
 
-
+updatePriceWithQuantity()
 
 
 
