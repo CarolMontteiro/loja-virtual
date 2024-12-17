@@ -91,19 +91,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 
-// function updatePriceWithQuantity() {
-//     let cart = JSON.parse(localStorage.getItem("cart")) || [];
-//
-//     let totalQuantity = 0;
-//     let totalPrice = 0;
-//
-//     cart.forEach(item => {
-//         totalQuantity += item.quantity;
-//         totalPrice += item.quantity * item.value;
-//     })
-//
-//     console.log( totalQuantity, totalPrice)
-// }
+function updatePriceWithQuantity(itemId) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const itemIndex = cart.findIndex(cartItem => cartItem.id === itemId);
+
+    let totalQuantity = cart[itemIndex].quantity;
+    let totalPrice = cart[itemIndex].quantity * cart[itemIndex].value;
+    console.log(totalQuantity, totalPrice)
+    return {totalQuantity: totalQuantity, totalPrice: totalPrice};
+}
 
 //        PÁGINA DE CARRINHO
 
@@ -120,6 +117,13 @@ function divAddToCart() {
 
     if (cart.length === 0) {
         contentProduct.innerHTML = "<p>Seu carrinho está vazio.</p>";
+        contentProduct.style.cssText =
+
+            'font-size: 16px;'+
+            'color:#6e6d6d;'+
+            'padding: 50px 0;'+
+            'text-align: center;'
+
         return;
     }
 
@@ -167,15 +171,24 @@ function divAddToCart() {
 
         removeItemCartButton.addEventListener("click", () => {
             let newQuantity = parseInt(quantityInputItemInCart.value) - 1;
-            quantityInputItemInCart.value = newQuantity > 0 ? newQuantity : 0;
+            quantityInputItemInCart.value = newQuantity > 0 ? newQuantity : 1;
+
             removeToCart(item.id, newQuantity);
+            let itemPriceWithQuantity = updatePriceWithQuantity(item.id);
+
+            priceText.textContent = `R$ ${itemPriceWithQuantity.totalPrice.toFixed(2).replace('.', ',')}`;
 
         });
 
         addItemCartButton.addEventListener("click", () => {
             let newQuantity = parseInt(quantityInputItemInCart.value) + 1;
             quantityInputItemInCart.value = newQuantity;
+
             addToCart(item, newQuantity);
+            let itemPriceWithQuantity = updatePriceWithQuantity(item.id);
+
+            priceText.textContent = `R$ ${itemPriceWithQuantity.totalPrice.toFixed(2).replace('.', ',')}`;
+
         });
 
 
@@ -184,7 +197,7 @@ function divAddToCart() {
         let divPriceProductFromTheCart = document.createElement('div');
         divPriceProductFromTheCart.className = "product-price";
 
-        const priceText = document.createElement("h5");
+        let priceText = document.createElement("h5");
         priceText.textContent = `R$ ${item.value.toFixed(2).replace('.', ',')}`;
         divPriceProductFromTheCart.appendChild(priceText);
 
@@ -194,13 +207,27 @@ function divAddToCart() {
         let divRemoveFromCart = document.createElement('div');
         divRemoveFromCart.className = "remove-from-cart";
 
-        const removeFromCartButton = document.createElement("button");
+        let removeFromCartButton = document.createElement("button");
         removeFromCartButton.className = "remove-from-cart";
         removeFromCartButton.innerHTML = `<i class="fa-regular fa-circle-xmark"></i>`;
         divRemoveFromCart.appendChild(removeFromCartButton);
 
         removeFromCartButton.addEventListener("click", () => {
             removeFromCart(item.id);
+            productDiv.remove();
+
+            if (contentProduct.children.length === 0) {
+                contentProduct.innerHTML = "<p>Seu carrinho está vazio.</p>"
+                contentProduct.style.cssText =
+
+                    'font-size: 16px;'+
+                    'color:#6e6d6d;'+
+                    'padding: 50px 0;'+
+                    'text-align: center;'
+                ;
+
+            }
+
         });
 
 
@@ -218,8 +245,6 @@ function divAddToCart() {
 }
 divAddToCart();
 
-
-updatePriceWithQuantity()
 
 
 

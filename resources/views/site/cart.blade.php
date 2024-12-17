@@ -6,12 +6,12 @@
                 Seu Carrinho
             </h1>
 
-            <div class="flex bg-white">
-                <div class="w-[70%]">
+            <div class=" bg-white lg:flex">
+                <div class="lg:w-[70%]">
                     <div class="flex border border-b-zinc-100 text-sm text-zinc-600">
                         <span class="w-1/2 py-3 pl-2.5 uppercase">Produtos</span>
-                        <span class="w-1/5 py-3 pl-2 uppercase">Quantidade</span>
-                        <span class="w-1/5 py-3 pl-2 uppercase">Total</span>
+                        <span class="w-1/5 py-3 pl-4 uppercase">Quantidade</span>
+                        <span class="w-1/5 py-3 pl-5 uppercase">Total</span>
                     </div>
 
                     <div id="content-product">
@@ -55,7 +55,7 @@
 {{--                    </button>--}}
 {{--                </div>--}}
 
-                <div class="bg-zinc-200 w-[30%] px-5">
+                <div class="bg-zinc-200 px-5 lg:w-[30%]">
                     <h3 class="text-center font-semibold uppercase py-3 border-2 border-b-zinc-300">Resumo da Compra</h3>
 
                     <div class="py-5 border-2 border-b-zinc-300">
